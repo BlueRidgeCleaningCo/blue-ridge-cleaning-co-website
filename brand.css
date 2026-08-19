@@ -1,0 +1,68 @@
+/* Blue Ridge campaign styling: turquoise, navy, white, bold and direct. */
+:root{--brand-turquoise:#16bfd0;--brand-turquoise-dark:#09a5b8;--brand-navy:#073448;--brand-ink:#062d3e;--brand-pale:#e8fbfd}
+body{color:var(--brand-ink);background:#fff}
+.site-header{background:#103584;padding:7px 0;border-bottom:4px solid var(--brand-turquoise)}
+.site-header.scrolled{background:rgba(16,53,132,.97);padding:5px 0;border-bottom-color:var(--brand-turquoise)}
+.brand-mark{stroke:var(--brand-turquoise-dark);stroke-width:4}
+.brand-logo{display:block;width:176px;height:auto;aspect-ratio:1122/578;object-fit:contain;object-position:center;clip-path:inset(0 0 1% 0)}
+.footer-logo{width:220px;height:auto;aspect-ratio:1122/578;object-fit:contain;object-position:center}
+.site-header nav>a:not(.button){color:#fff}
+.site-header .button-small{background:var(--brand-turquoise);border-color:var(--brand-turquoise);color:var(--brand-navy)}
+.brand>span>span{color:var(--brand-turquoise-dark)}
+.button{background:var(--brand-turquoise);color:var(--brand-navy);border:2px solid var(--brand-turquoise);text-transform:uppercase;letter-spacing:.035em;font-weight:800;box-shadow:0 7px 0 rgba(7,52,72,.16)}
+.button:hover{background:#fff;color:var(--brand-navy);border-color:var(--brand-navy);box-shadow:0 4px 0 rgba(7,52,72,.18)}
+.button-small{background:var(--brand-navy);color:#fff;border-color:var(--brand-navy);box-shadow:none}
+.hero{min-height:760px;background:linear-gradient(110deg,var(--brand-turquoise) 0 54%,var(--brand-pale) 54% 100%);padding-top:150px}
+.hero:before{border:12px solid rgba(255,255,255,.18);width:380px;height:380px}
+.hero-grid{grid-template-columns:1.05fr .95fr}
+.hero-copy{position:relative;z-index:2}
+.hero .eyebrow{display:inline-block;background:var(--brand-navy);color:#fff;padding:8px 13px;margin-bottom:20px;letter-spacing:.17em}
+.hero h1{font-size:clamp(3.2rem,6.5vw,6.2rem);text-transform:uppercase;line-height:.94;letter-spacing:-.06em;color:var(--brand-navy);max-width:760px}
+.hero-lede{color:var(--brand-navy);font-size:20px;font-weight:600;max-width:620px}
+.hero .button{background:var(--brand-navy);border-color:var(--brand-navy);color:#fff}
+.hero .button:hover{background:#fff;color:var(--brand-navy)}
+.hero .text-link{font-size:19px;text-decoration-thickness:3px;color:var(--brand-navy)}
+.trust-list{color:var(--brand-navy);font-weight:800;gap:20px}
+.trust-list li:before{color:var(--brand-navy)}
+.brand-line{font:800 17px "Manrope",sans-serif;text-transform:uppercase;letter-spacing:.035em;color:var(--brand-navy);margin:22px 0 0}
+.ridge.far{fill:#c9f2f4}.ridge.near{fill:#62d3dc}.sun{background:#fff}
+.house{fill:#fff;stroke:var(--brand-navy)}.roof,.ground{stroke:var(--brand-navy)}.window{fill:var(--brand-turquoise);stroke:var(--brand-navy)}.door{fill:var(--brand-navy);stroke:var(--brand-navy)}
+.hero-badge{border-left:0;border-top:8px solid var(--brand-turquoise);border-radius:5px;background:var(--brand-navy);color:#fff;box-shadow:12px 12px 0 rgba(7,52,72,.16)}
+.hero-badge span,.hero-badge small{color:#bdeff2}.hero-badge strong{text-transform:uppercase}
+.strip{background:var(--brand-navy);border-bottom:8px solid var(--brand-turquoise)}
+.intro-grid p{color:#fff;text-transform:uppercase}.intro-grid div{color:#fff;font-weight:700}
+.section{padding:100px 0}.eyebrow{color:var(--brand-turquoise-dark)}
+.section-heading h2{text-transform:uppercase}
+.service-grid{gap:14px}
+.service-card{border:2px solid var(--brand-navy);border-radius:5px;box-shadow:8px 8px 0 var(--brand-pale)}
+.service-card:hover{box-shadow:10px 10px 0 var(--brand-turquoise);transform:translate(-2px,-2px)}
+.service-card.featured{background:var(--brand-turquoise);border-color:var(--brand-navy);box-shadow:8px 8px 0 var(--brand-navy)}
+.service-icon{border-radius:4px;background:var(--brand-navy);color:#fff}
+.service-card h3{text-transform:uppercase;font-size:20px}
+.plans-section{background:var(--brand-navy);border-top:10px solid var(--brand-turquoise);border-bottom:10px solid var(--brand-turquoise)}
+.section-heading.light .eyebrow{color:var(--brand-turquoise)}
+.plan-card{border-radius:5px;border:2px solid var(--brand-turquoise)}
+.plan-card.popular{background:var(--brand-turquoise);color:var(--brand-navy);box-shadow:12px 12px 0 #fff}
+.popular-label{background:var(--brand-navy);color:#fff;border-radius:0;padding:10px 18px}
+.plan-card h3{text-transform:uppercase}
+.button-light{background:var(--brand-navy);color:#fff;border-color:var(--brand-navy)}
+.button-outline{border:2px solid var(--brand-turquoise);color:#fff;box-shadow:none}
+.why-art{border-radius:5px;background:var(--brand-turquoise);border:3px solid var(--brand-navy);box-shadow:14px 14px 0 var(--brand-navy)}
+.number-card{border-radius:3px;background:var(--brand-navy)}
+.reviews-section{background:var(--brand-pale);border-top:8px solid var(--brand-turquoise)}
+.google-rating{align-self:end;background:var(--brand-navy);color:#fff;padding:18px 22px;border-left:8px solid var(--brand-turquoise)}
+.google-rating strong{font:800 28px "Manrope",sans-serif}.google-rating strong span{color:var(--brand-turquoise);font-size:15px;letter-spacing:2px}.google-rating p{margin:2px 0;font-size:13px;color:#cdecef}.google-rating a{font-size:13px;font-weight:800;color:#fff;text-underline-offset:4px}
+.reviews-section .placeholder-note{color:#56737a;margin:-35px 0 28px}
+.review{border-radius:5px;border:2px solid var(--brand-navy);box-shadow:7px 7px 0 var(--brand-turquoise)}
+.stars{color:var(--brand-turquoise-dark)}
+.map-card{border-radius:5px;background:var(--brand-turquoise);border:3px solid var(--brand-navy);box-shadow:12px 12px 0 var(--brand-navy)}
+.pin{border-radius:3px}.pin i{background:var(--brand-turquoise-dark)}
+.faq-section{border-top:8px solid var(--brand-navy)}
+.contact-section{background:var(--brand-turquoise);border-top:10px solid var(--brand-navy)}
+.contact-section .eyebrow{color:var(--brand-navy)}
+.contact-copy>p:not(.eyebrow){color:var(--brand-navy)}
+.quote-form{border-radius:5px;border:3px solid var(--brand-navy);box-shadow:12px 12px 0 var(--brand-navy)}
+.form-submit{background:var(--brand-navy);color:#fff;border-color:var(--brand-navy)}
+.site-footer{background:var(--brand-navy);border-top:8px solid #fff}
+@media(max-width:900px){.hero{background:var(--brand-turquoise)}.menu-toggle span:not(.sr-only){background:#fff}.site-header nav{background:var(--brand-navy);border-radius:5px;border:2px solid var(--brand-turquoise);box-shadow:8px 8px 0 var(--brand-turquoise)}.hero-art{margin-top:20px}}
+@media(max-width:620px){.brand-logo{width:142px;height:auto}.footer-logo{width:200px;height:auto}.hero{min-height:auto;padding-top:135px;padding-bottom:70px}.hero h1{font-size:clamp(2.7rem,15vw,4.1rem)}.hero-lede{font-size:17px}.hero-art{display:none}.service-card,.plan-card,.review,.quote-form{box-shadow:6px 6px 0 var(--brand-navy)}.reviews-section .placeholder-note{margin:-15px 0 25px}.google-rating{margin-top:8px}}

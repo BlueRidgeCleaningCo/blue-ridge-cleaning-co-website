@@ -1,0 +1,55 @@
+.m365-quote-card {
+  background: #fff;
+  border: 3px solid var(--navy);
+  box-shadow: 12px 12px 0 var(--navy);
+  padding: 42px;
+}
+
+.m365-eyebrow {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 7px 11px;
+  background: var(--sky);
+  color: var(--navy);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.m365-quote-card h3 {
+  color: var(--navy);
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  text-transform: uppercase;
+}
+
+.m365-quote-card > p:not(.form-note) {
+  margin: 20px 0;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.m365-quote-card ul {
+  margin: 0 0 30px;
+  padding: 22px 0;
+  list-style: none;
+  border-block: 1px solid var(--line);
+}
+
+.m365-quote-card li {
+  padding: 6px 0 6px 28px;
+  position: relative;
+  font-weight: 700;
+}
+
+.m365-quote-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--cyan2);
+  font-weight: 800;
+}
+
+@media (max-width: 620px) {
+  .m365-quote-card { padding: 27px 22px; }
+}
