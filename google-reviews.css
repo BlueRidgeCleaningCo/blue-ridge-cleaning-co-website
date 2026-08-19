@@ -1,0 +1,37 @@
+.google-review-card {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px;
+  text-align: center;
+  background: #fff;
+  border: 2px solid var(--navy);
+  box-shadow: 9px 9px 0 var(--cyan);
+}
+
+.google-review-card h3 {
+  margin: 12px 0 16px;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  text-transform: uppercase;
+}
+
+.google-review-card p {
+  max-width: 590px;
+  margin: 0 auto 28px;
+  color: var(--muted);
+}
+
+.google-review-card .button {
+  min-width: min(100%, 330px);
+}
+
+.google-stars {
+  color: var(--cyan2);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 620px) {
+  .google-review-card { padding: 34px 22px; }
+}
