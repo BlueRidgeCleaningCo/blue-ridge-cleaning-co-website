@@ -1,0 +1,104 @@
+.hero {
+  position: relative;
+  isolation: isolate;
+  background-color: var(--navy);
+  background-image:
+    linear-gradient(90deg, rgba(5, 38, 56, 1) 0%, rgba(5, 38, 56, .96) 42%, rgba(5, 38, 56, .58) 66%, rgba(5, 38, 56, .18) 100%),
+    url("blue-ridge-gate-cleaning-hero.png");
+  background-position: center, calc(100% + 130px) center;
+  background-size: cover, auto 100%;
+  background-repeat: no-repeat;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  z-index: -1;
+  height: 170px;
+  background: linear-gradient(transparent, rgba(5, 38, 56, .5));
+  pointer-events: none;
+}
+
+.hero-grid {
+  grid-template-columns: 1fr;
+  min-height: 720px;
+}
+
+.hero-copy {
+  max-width: 640px;
+  padding-bottom: 70px;
+}
+
+.hero h1,
+.hero-lede,
+.hero .call,
+.hero .trust {
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: clamp(3.2rem, 6vw, 6.4rem);
+  text-shadow: 0 4px 28px rgba(0, 0, 0, .3);
+}
+
+.hero-lede {
+  max-width: 610px;
+}
+
+.hero h1 em {
+  color: var(--cyan);
+  text-shadow: none;
+}
+
+.hero .overline {
+  background: var(--cyan);
+  color: var(--navy);
+}
+
+.hero .button {
+  background: var(--cyan);
+  color: var(--navy);
+  border-color: #fff;
+  box-shadow: 6px 6px 0 #fff;
+}
+
+.hero .button:hover {
+  box-shadow: 3px 3px 0 #fff;
+}
+
+.hero .trust li::before {
+  color: var(--cyan);
+}
+
+.hero-visual {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    background:
+      linear-gradient(90deg, rgba(5, 38, 56, .94), rgba(5, 38, 56, .58)),
+      url("blue-ridge-gate-cleaning-hero.png") 43% center / cover no-repeat;
+  }
+
+  .hero-grid {
+    min-height: 660px;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero {
+    background:
+      linear-gradient(rgba(5, 38, 56, .8), rgba(5, 38, 56, .92)),
+      url("blue-ridge-gate-cleaning-hero.png") 38% center / cover no-repeat;
+  }
+
+  .hero-grid {
+    min-height: 650px;
+  }
+
+  .hero-copy {
+    padding: 72px 0 45px;
+  }
+}
