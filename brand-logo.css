@@ -51,3 +51,31 @@
 .project.roof-project img {
   object-fit: contain;
 }
+
+.gallery article {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery .project.real-project {
+  aspect-ratio: 16 / 10;
+  height: auto;
+}
+
+.gallery .project.real-project img {
+  object-fit: cover;
+}
+
+.gallery .project.tall-project img,
+.gallery .project.concrete-project img,
+.gallery .project.roof-project img {
+  object-fit: contain;
+}
+
+.gallery h3 {
+  line-height: 1.2;
+}
+
+.gallery p {
+  margin-top: auto;
+}
