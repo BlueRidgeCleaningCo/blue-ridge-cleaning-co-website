@@ -1,4 +1,1 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://blueridgecleaningco.com/sitemap.xml
+User-agent: *Allow: /Sitemap: https://brexteriorcleaning.com/sitemap.xml
