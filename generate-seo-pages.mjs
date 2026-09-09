@@ -184,6 +184,55 @@ const locations = [
     intro: "Blue Ridge Exterior Cleaning LLC serves Milton homes and businesses with house washing, pressure washing, roof cleaning, concrete cleaning, fence cleaning and exterior window service. Every quote identifies the included surfaces before the appointment is scheduled.",
     detail: "Different materials require different methods. We assess siding, roofing, concrete, wood and masonry separately rather than applying the same pressure everywhere. Photos and the property address can help begin the quote process before an on-site evaluation is needed.",
     nearby: "Milton service is available alongside appointments in Hurricane, Teays Valley, Winfield, Barboursville and nearby communities."
+  },
+  {
+    slug: "scott-depot-wv", city: "Scott Depot", county: "Putnam County",
+    description: "Pressure washing, house washing, concrete cleaning, roof cleaning and exterior window cleaning in Scott Depot, West Virginia.",
+    intro: "Blue Ridge Exterior Cleaning LLC serves Scott Depot homes and businesses with pressure washing, house washing, roof cleaning, concrete cleaning and exterior window service. Customers can request an individual service or ask for several exterior areas to be included in one quote.",
+    detail: "We review the property materials, access and visible buildup before confirming the cleaning approach. Lower-pressure methods are used for sensitive surfaces, while durable concrete and masonry may be suitable for pressure washing after evaluation.",
+    nearby: "Scott Depot appointments are available alongside service in Teays Valley, Hurricane, Winfield and surrounding Putnam County communities."
+  },
+  {
+    slug: "st-albans-wv", city: "St. Albans", county: "Kanawha County",
+    description: "Pressure washing, soft washing, concrete cleaning, roof cleaning and exterior window cleaning in St. Albans, West Virginia.",
+    intro: "Blue Ridge Exterior Cleaning LLC provides exterior cleaning for St. Albans properties. Available services include house washing, driveway and walkway cleaning, roof cleaning, fence cleaning, exterior windows and selected commercial exterior work.",
+    detail: "The quote reflects the surfaces being cleaned, their condition and the access available at the property. We select pressure washing or a lower-pressure process based on the material rather than using one method throughout the property.",
+    nearby: "St. Albans service is available with nearby appointments in Nitro, South Charleston, Cross Lanes and Charleston."
+  },
+  {
+    slug: "south-charleston-wv", city: "South Charleston", county: "Kanawha County",
+    description: "Residential and commercial pressure washing, house washing, concrete cleaning and exterior window cleaning in South Charleston, West Virginia.",
+    intro: "Blue Ridge Exterior Cleaning LLC serves South Charleston with residential and commercial exterior cleaning. Quotes can include siding, driveways, sidewalks, patios, roofs, fences, exterior windows and selected building or commercial concrete areas.",
+    detail: "Before scheduling, we confirm the work area, surface materials, water access and any stains or damage that could affect the result. Each surface is assigned a suitable cleaning method and included clearly in the quote.",
+    nearby: "South Charleston appointments are available alongside service in Charleston, St. Albans, Cross Lanes, Nitro and nearby Kanawha County communities."
+  },
+  {
+    slug: "nitro-wv", city: "Nitro", county: "Kanawha and Putnam Counties",
+    description: "Pressure washing, house soft washing, driveway cleaning, roof cleaning and exterior window cleaning in Nitro, West Virginia.",
+    intro: "Blue Ridge Exterior Cleaning LLC provides exterior cleaning in Nitro for homes and businesses. Customers can request house washing, concrete cleaning, roof cleaning, fence cleaning, exterior windows or a combined exterior cleaning quote.",
+    detail: "Siding, roofing, concrete, wood and masonry are evaluated separately because they do not require the same equipment or pressure. We confirm the included surfaces and any specialty stain concerns before scheduling.",
+    nearby: "Nitro service is available alongside appointments in St. Albans, Cross Lanes, Teays Valley, South Charleston and surrounding communities."
+  },
+  {
+    slug: "barboursville-wv", city: "Barboursville", county: "Cabell County",
+    description: "Pressure washing, soft washing, concrete cleaning, roof cleaning and exterior window cleaning in Barboursville, West Virginia.",
+    intro: "Blue Ridge Exterior Cleaning LLC serves Barboursville properties with house washing, pressure washing, roof cleaning, concrete cleaning, fence cleaning and exterior window service. The requested areas can be quoted individually or together.",
+    detail: "We use property details and photos when available to review the likely cleaning method, access and scope. Permanent stains, oxidation, damaged coatings and specialty treatments are discussed separately because cleaning results depend on the condition of the surface.",
+    nearby: "Barboursville appointments are available alongside service in Milton, Hurricane and other nearby Cabell and Putnam County communities."
+  },
+  {
+    slug: "sissonville-wv", city: "Sissonville", county: "Kanawha County",
+    description: "Pressure washing, house washing, concrete cleaning, roof cleaning and exterior window cleaning in Sissonville, West Virginia.",
+    intro: "Blue Ridge Exterior Cleaning LLC provides exterior cleaning in Sissonville for siding, concrete, roofs, decks, fences and exterior windows. Customers can send the property address and photos to begin a service-specific quote.",
+    detail: "The cleaning plan accounts for surface type, property access and the kind of buildup present. Sensitive materials receive controlled lower pressure, while durable surfaces may be cleaned with pressure-washing equipment when appropriate.",
+    nearby: "Sissonville service is scheduled alongside appointments in Charleston, Cross Lanes and surrounding Kanawha County communities when availability allows."
+  },
+  {
+    slug: "point-pleasant-wv", city: "Point Pleasant", county: "Mason County",
+    description: "Pressure washing, house washing, concrete cleaning, roof cleaning and exterior window cleaning in Point Pleasant, West Virginia.",
+    intro: "Blue Ridge Exterior Cleaning LLC accepts exterior cleaning requests in Point Pleasant for house washing, driveways and sidewalks, roofs, fences, exterior windows and selected commercial areas. Availability is confirmed after reviewing the property and requested scope.",
+    detail: "Because travel, access, surface materials and project size affect scheduling and pricing, the property address and photos are helpful when requesting service. We confirm the included work and cleaning approach before reserving an appointment.",
+    nearby: "Point Pleasant availability depends on the project scope and current route schedule. Send the property address to confirm service before planning an appointment."
   }
 ];
 
