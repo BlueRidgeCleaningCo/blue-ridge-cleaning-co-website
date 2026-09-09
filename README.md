@@ -1,12 +1,10 @@
-# Blue Ridge Cleaning Co. website
+# Blue Ridge Exterior Cleaning LLC website
 
 A ready-to-deploy static website. No build step is required.
 
-## Before publishing
+## Updating the site
 
-1. In `index.html`, replace `hello@blueridgecleaningco.com` with the real email address. The phone number has been updated from the supplied Google business profile.
-2. Replace the three clearly marked sample reviews with verified customer reviews, or remove the sample cards until reviews are available. The displayed 5.0 rating and 12-review count came from the supplied Google business profile; update them if they change.
-3. Check all service descriptions and form options against the final offer.
+The site is deployed from the root of the `main` branch through GitHub Pages. Run `node generate-seo-pages.mjs` after editing the service or location data, then commit the generated pages and updated sitemap.
 
 ## Cheapest deployment options
 
