@@ -1,30 +1,17 @@
-# Blue Ridge Exterior Cleaning LLC website
+# Blue Ridge Soft & Power washing LLC website
 
-A ready-to-deploy static website. No build step is required.
+Static website hosted by GitHub Pages from the root of the main branch at https://brexteriorcleaning.com/.
 
 ## Updating the site
 
-The site is deployed from the root of the `main` branch through GitHub Pages. Run `node generate-seo-pages.mjs` after editing the service or location data, then commit the generated pages and updated sitemap.
+Edit index.html for the homepage. Edit generate-seo-pages.mjs for service and location content, then run node generate-seo-pages.mjs and commit the generated pages. No build step is required for deployment.
 
-## Cheapest deployment options
+The quote links open the existing Microsoft Forms quote form. Contact details, the Google review link and the website domain are maintained independently from the business display name.
 
-### Netlify (easiest form setup)
+## Branding
 
-Drag the entire folder into Netlify Drop, or connect a GitHub repository and set the publish directory to `/`. The included form is already prepared for Netlify Forms. After the first deployment, submit one test entry and check **Forms** in the Netlify dashboard. Connect a custom domain in **Domain management**; Netlify provides HTTPS automatically.
+The business name is Blue Ridge Soft & Power washing LLC. The header and footer use blue-ridge-soft-power-washing-logo.svg; favicon.svg provides the browser icon. brand-logo.css controls logo sizing. The navy and turquoise colors are defined in styles.css. Older raster logo files are retained as historical assets and are not used by current pages.
 
-### Cloudflare Pages
+## Search content
 
-Upload the folder with Direct Upload or connect a GitHub repository. No build command is needed; use `/` as the output directory. Connect the domain under **Custom domains**. The current form will need a form backend such as Formspree, Basin, or a Cloudflare Worker because Netlify Forms only processes submissions hosted on Netlify.
-
-### GitHub Pages
-
-Upload these files to a GitHub repository, open **Settings → Pages**, and deploy from the main branch/root folder. Add the custom domain in the Pages settings. The current form will need a third-party form backend because GitHub Pages cannot process form submissions.
-
-## Included files
-
-- `index.html` — full website and form
-- `styles.css` — responsive styling and animation
-- `brand.css` — Blue Ridge turquoise campaign styling
-- `blue-ridge-cleaning-logo.png` — supplied company logo
-- `script.js` — menu, accordion, plan selection, and scroll effects
-- `thanks.html` — form confirmation page
+The homepage, seven service pages and thirteen West Virginia location pages contain service-specific titles, descriptions, canonical URLs and structured data. The existing page URLs are preserved. Key service terms include soft washing, power washing, pressure washing, house washing, roof cleaning, concrete cleaning, driveway cleaning and exterior window cleaning.
