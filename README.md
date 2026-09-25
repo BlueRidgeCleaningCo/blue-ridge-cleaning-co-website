@@ -10,7 +10,7 @@ The quote links open the existing Microsoft Forms quote form. Contact details, t
 
 ## Branding
 
-The business name is Blue Ridge Soft & Power washing LLC. The header and footer use blue-ridge-soft-power-washing-logo.svg; favicon.svg provides the browser icon. brand-logo.css controls logo sizing. The navy and turquoise colors are defined in styles.css. Older raster logo files are retained as historical assets and are not used by current pages.
+The business name is Blue Ridge Soft & Power washing LLC. The header and footer use the supplied white-on-blue full logo in blue-ridge-soft-power-washing-logo.svg; favicon.svg uses the supplied circular BR mark. Both SVG containers embed the exact original JPEG artwork, without redrawing it. brand-logo.css controls logo sizing. The navy and turquoise colors are defined in styles.css. Older raster logo files are retained as historical assets and are not used by current pages.
 
 ## Search content
 
