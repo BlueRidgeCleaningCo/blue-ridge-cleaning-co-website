@@ -6,9 +6,9 @@
 }
 
 .logo img {
-  width: 290px;
+  width: 208px;
   height: auto;
-  max-height: 68px;
+  max-height: 104px;
   object-fit: contain;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, .12));
 }
@@ -22,9 +22,9 @@
 
 @media (max-width: 620px) {
   .logo img {
-    width: 240px;
+    width: 170px;
     height: auto;
-    max-height: 56px;
+    max-height: 84px;
   }
 }
 
@@ -79,4 +79,15 @@
 
 .gallery p {
   margin-top: auto;
+}
+
+/* Full supplied logo has a 2:1 aspect ratio. Keep all lettering visible. */
+.header .nav-row { height: 120px; }
+.header.scrolled .nav-row { height: 104px; }
+.header.scrolled .logo img { max-height: 88px; }
+@media (max-width: 900px) { .header nav { top: 120px; } .header.scrolled nav { top: 104px; } }
+@media (max-width: 620px) {
+  .header .nav-row, .header.scrolled .nav-row { height: 100px; }
+  .header nav, .header.scrolled nav { top: 100px; }
+  .header.scrolled .logo img { max-height: 84px; }
 }
