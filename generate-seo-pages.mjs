@@ -272,7 +272,7 @@ function shell({ title, description, canonical, kicker, h1, lede, image, imageAl
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="header seo-header" id="top"><div class="container nav-row">
-    <a class="logo" href="../../" aria-label="Blue Ridge Soft &amp; Power washing LLC home"><img src="../../blue-ridge-soft-power-washing-logo.svg" alt="Blue Ridge Soft &amp; Power washing LLC"></a>
+    <a class="logo" href="../../" aria-label="Blue Ridge Soft &amp; Power washing LLC home"><img src="../../blue-ridge-soft-power-washing-logo.svg?v=white" alt="Blue Ridge Soft &amp; Power washing LLC"></a>
     <button class="menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span><b class="sr-only">Open menu</b></button>
     <nav id="nav" aria-label="Primary navigation"><a href="../../#services">Services</a><a href="../../#work">Our work</a><a href="../../#areas">Service area</a><a class="nav-cta" href="${quoteUrl}" target="_blank" rel="noopener noreferrer">Free quote</a></nav>
   </div></header>
@@ -281,7 +281,7 @@ function shell({ title, description, canonical, kicker, h1, lede, image, imageAl
     <section class="seo-content"><div class="container seo-layout"><article class="seo-copy">${body}</article><aside class="seo-panel"><h2>Get a clear quote</h2><p>Send the property address, the surfaces you want cleaned and any helpful photos. We will review the details and confirm the scope before scheduling.</p><a class="button" href="${quoteUrl}" target="_blank" rel="noopener noreferrer">Request pricing <span>→</span></a><a class="phone" href="tel:${phoneHref}">${phoneDisplay}</a></aside></div></section>
     <section class="seo-locations"><div class="container"><p class="overline">Explore more</p><h2>${lowerTitle}</h2><div class="link-grid">${lowerLinks}</div></div></section>
   </main>
-  <footer class="seo-footer"><div class="container footer-grid"><img src="../../blue-ridge-soft-power-washing-logo.svg" alt="Blue Ridge Soft &amp; Power washing LLC"><p>We don’t cut corners.<br>We clean them.</p><div><a href="../../services/pressure-washing/">Pressure washing</a><a href="../../services/house-washing/">House washing</a><a href="../../services/roof-cleaning/">Roof cleaning</a><a href="../../services/concrete-cleaning/">Concrete cleaning</a><a href="../../services/window-cleaning/">Window cleaning</a><a href="../../#quote">Free quote</a></div></div><div class="container copyright"><span>© <span id="year"></span> Blue Ridge Soft &amp; Power washing LLC</span><span>Teays Valley, West Virginia</span></div></footer>
+  <footer class="seo-footer"><div class="container footer-grid"><img src="../../blue-ridge-soft-power-washing-logo.svg?v=white" alt="Blue Ridge Soft &amp; Power washing LLC"><p>We don’t cut corners.<br>We clean them.</p><div><a href="../../services/pressure-washing/">Pressure washing</a><a href="../../services/house-washing/">House washing</a><a href="../../services/roof-cleaning/">Roof cleaning</a><a href="../../services/concrete-cleaning/">Concrete cleaning</a><a href="../../services/window-cleaning/">Window cleaning</a><a href="../../#quote">Free quote</a></div></div><div class="container copyright"><span>© <span id="year"></span> Blue Ridge Soft &amp; Power washing LLC</span><span>Teays Valley, West Virginia</span></div></footer>
   <script src="../../script.js"></script>
 </body>
 </html>`;
