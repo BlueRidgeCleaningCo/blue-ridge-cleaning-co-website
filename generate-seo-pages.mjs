@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, writeFile, readFile } from "node:fs/promises";
 
 const root = new URL("./", import.meta.url);
 const businessName = "Blue Ridge Soft & Power washing LLC";
@@ -145,6 +145,44 @@ const services = [
   }
 ];
 
+services.push({
+  "slug": "deck-cleaning",
+  "name": "Deck Cleaning",
+  "title": "Deck Cleaning in Teays Valley & Charleston WV | Blue Ridge",
+  "description": "Wood and composite deck cleaning in Teays Valley, Charleston, Hurricane and nearby WV communities. Request a surface-specific quote from Blue Ridge.",
+  "kicker": "Wood and composite deck cleaning in West Virginia",
+  "h1": "Deck cleaning <em>for wood and composite.</em>",
+  "image": "blue-ridge-gate-cleaning-hero.png",
+  "imageAlt": "Blue Ridge team cleaning an outdoor gate",
+  "intro": "Blue Ridge Soft & Power washing LLC cleans wood and composite decks in Teays Valley, Charleston, Hurricane and nearby West Virginia communities. Tell us the deck material, approximate size and condition so we can plan a cleaning method suited to the boards, railings and existing finish.",
+  "bestFor": [
+    "Wood deck boards and accessible railings",
+    "Composite decking with a material-appropriate cleaning method",
+    "Steps and attached deck sections included in your quote",
+    "Dirt and organic buildup on outdoor deck surfaces"
+  ],
+  "method": "Wood and composite decking need different preparation and cleaning methods. We check the material, coating, condition and visible buildup before selecting a cleaning solution and pressure. Composite manufacturer guidance and the condition of wood boards help determine the approach. Aggressive pressure is not a default treatment for a deck.",
+  "results": "Cleaning can remove dirt and organic buildup, but it does not repair loose boards, rot, damaged coatings or permanent fading. Staining, sealing, coating removal and structural repairs are separate from a standard cleaning quote. Identify any concerns when you send your photos.",
+  "faqs": [
+    [
+      "Do you clean both wood and composite decks?",
+      "Yes. We clean both wood and composite decks and select the method after reviewing the material and condition."
+    ],
+    [
+      "Can I request deck pressure washing in Charleston, WV?",
+      "Yes. We accept deck-cleaning requests in Charleston and nearby service areas. The pressure and cleaning method are selected for your deck, rather than using the same approach as a concrete driveway."
+    ],
+    [
+      "What should I include with a deck-cleaning quote request?",
+      "Include your address, photos, approximate deck size, whether the boards are wood or composite, and any known stain, paint or coating. Tell us if the steps or railings should be included."
+    ],
+    [
+      "Can deck cleaning be combined with house washing?",
+      "Yes. Include both services in your request so the surfaces and price can be confirmed together."
+    ]
+  ]
+});
+
 const locations = [
   {
     slug: "teays-valley-wv", city: "Teays Valley", county: "Putnam County",
@@ -239,10 +277,26 @@ const locations = [
   }
 ];
 
+for (const service of services) {
+  service.title = service.slug === 'deck-cleaning' ? 'Deck Cleaning Teays Valley & Charleston WV | Blue Ridge' : service.slug === 'pressure-washing' ? 'Power & Pressure Washing Teays Valley WV | Blue Ridge' : service.name + ' Teays Valley WV | Blue Ridge';
+  if (service.slug === 'house-washing') service.faqs.push(['Does house washing include indoor cleaning?', 'House washing here means exterior siding and the exterior areas listed in your quote. Interior rooms and housekeeping are not part of this service.']);
+  if (service.slug === 'roof-cleaning') service.faqs.push(['Will roof cleaning fix a roof leak?', 'Roof cleaning removes surface buildup; it does not repair leaks or damaged roofing. Have a roofer assess and repair damaged areas before a cleaning appointment.']);
+}
+const locationUpdates = {
+ 'charleston-wv': { description: 'Pressure washing in Charleston, WV for driveways, patios and walkways, plus house soft washing and wood or composite deck cleaning. Request a free quote.', detail: 'For a Charleston driveway, patio or walkway, include photos showing the full concrete area and any visible stains. For siding or a wood or composite deck, identify the material and any paint or coating. We can quote these surfaces together and explain which areas need pressure washing or a lower-pressure approach.' },
+ 'milton-wv': { description: 'Power washing and house soft washing in Milton, WV. Get a quote for driveways, patios, roof cleaning, decks and exterior windows from Blue Ridge.', detail: 'For a Milton power-washing request, list each area you want cleaned: driveway, connecting walkways, patio or other durable surfaces. House siding, roofing, wood decks and composite decks need their own material review. Photos and the address help us confirm access, the work area and whether an on-site look is needed.' },
+ 'barboursville-wv': { description: 'Exterior house washing and pressure washing in Barboursville, WV. Siding, driveways, patios, decks and exterior windows. Request a free Blue Ridge quote.', detail: 'Our Barboursville service focuses on outdoor surfaces: house siding, driveways, patios, decks, fences and exterior windows. When requesting residential cleaning, specify the exterior areas and their materials. For a business property, include photos of the building exterior or sidewalks and the access available.' },
+ 'sissonville-wv': { description: 'Pressure washing, house soft washing and deck cleaning in Sissonville, WV. Send your address and photos for a quote and service availability.', detail: 'For Sissonville properties, include the driveway or walkway length, the house siding material, deck material and photos of the areas you want cleaned. Note gates, slopes or other access limitations and the available water connection. These details help us evaluate the cleaning method and confirm scheduling before you make plans.' }
+};
+for (const location of locations) Object.assign(location, locationUpdates[location.slug] || {});
+const optimizedPhotos = {"blue-ridge-gate-cleaning-hero.png":"blue-ridge-gate-cleaning-hero-web.svg","house-soft-wash-before-after.jpg":"house-soft-wash-before-after-web.svg","metal-roof-wash-before-after.png":"metal-roof-wash-before-after-web.svg","west-virginia-service-area.png":"west-virginia-service-area-web.svg"};
+const photoSizes = {"blue-ridge-gate-cleaning-hero-web.svg":{"width":1290,"height":1485},"house-soft-wash-before-after-web.svg":{"width":1556,"height":1011},"metal-roof-wash-before-after-web.svg":{"width":1565,"height":1005},"west-virginia-service-area-web.svg":{"width":1536,"height":1024}};
 const serviceLinks = services.map((service) => `<a class="link-card" href="../../services/${service.slug}/"><strong>${service.name}</strong><span>Service details and quote information</span></a>`).join("");
 const locationLinks = locations.map((location) => `<a class="link-card" href="../../locations/${location.slug}/"><strong>${location.city}</strong><span>${location.county}, West Virginia</span></a>`).join("");
 
 function shell({ title, description, canonical, kicker, h1, lede, image, imageAlt, body, lowerTitle, lowerLinks, schema }) {
+  const displayImage = optimizedPhotos[image] || image;
+  const imageSize = photoSizes[displayImage] || { width: 900, height: 650 };
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -263,25 +317,23 @@ function shell({ title, description, canonical, kicker, h1, lede, image, imageAl
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../styles.css">
-  <link rel="stylesheet" href="../../brand-logo.css">
-  <link rel="stylesheet" href="../../seo-pages.css">
+  <link rel="stylesheet" href="../../site.css?v=20260925">
   <style>.seo-header{position:fixed}</style>
   <script type="application/ld+json">${JSON.stringify(schema)}</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="header seo-header" id="top"><div class="container nav-row">
-    <a class="logo" href="../../" aria-label="Blue Ridge Soft &amp; Power washing LLC home"><img src="../../blue-ridge-soft-power-washing-logo.svg?v=white" alt="Blue Ridge Soft &amp; Power washing LLC"></a>
+    <a class="logo" href="../../" aria-label="Blue Ridge Soft &amp; Power washing LLC home"><img src="../../blue-ridge-soft-power-washing-logo.svg?v=white" alt="Blue Ridge Soft &amp; Power washing LLC" width="960" height="480"></a>
     <button class="menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span><b class="sr-only">Open menu</b></button>
     <nav id="nav" aria-label="Primary navigation"><a href="../../#services">Services</a><a href="../../#work">Our work</a><a href="../../#areas">Service area</a><a class="nav-cta" href="${quoteUrl}" target="_blank" rel="noopener noreferrer">Free quote</a></nav>
   </div></header>
   <main class="seo-main" id="main">
-    <section class="seo-hero"><div class="container seo-hero-grid"><div><div class="breadcrumbs"><a href="../../">Home</a><span>/</span><span>${kicker}</span></div><p class="overline">${kicker}</p><h1>${h1}</h1><p>${escapeHtml(lede)}</p><div class="actions"><a class="button" href="${quoteUrl}" target="_blank" rel="noopener noreferrer">Request a free quote <span>→</span></a><a class="call" href="tel:${phoneHref}"><small>Call or text</small>${phoneDisplay}</a></div></div><figure><img src="../../${image}" alt="${escapeHtml(imageAlt)}" width="900" height="650"></figure></div></section>
+    <section class="seo-hero"><div class="container seo-hero-grid"><div><div class="breadcrumbs"><a href="../../">Home</a><span>/</span><span>${kicker}</span></div><p class="overline">${kicker}</p><h1>${h1}</h1><p>${escapeHtml(lede)}</p><div class="actions"><a class="button" href="${quoteUrl}" target="_blank" rel="noopener noreferrer">Request a free quote <span>→</span></a><a class="call" href="tel:${phoneHref}"><small>Call or text</small>${phoneDisplay}</a></div></div><figure><img src="../../${displayImage}" alt="${escapeHtml(imageAlt)}" width="${imageSize.width}" height="${imageSize.height}" decoding="async"></figure></div></section>
     <section class="seo-content"><div class="container seo-layout"><article class="seo-copy">${body}</article><aside class="seo-panel"><h2>Get a clear quote</h2><p>Send the property address, the surfaces you want cleaned and any helpful photos. We will review the details and confirm the scope before scheduling.</p><a class="button" href="${quoteUrl}" target="_blank" rel="noopener noreferrer">Request pricing <span>→</span></a><a class="phone" href="tel:${phoneHref}">${phoneDisplay}</a></aside></div></section>
     <section class="seo-locations"><div class="container"><p class="overline">Explore more</p><h2>${lowerTitle}</h2><div class="link-grid">${lowerLinks}</div></div></section>
   </main>
-  <footer class="seo-footer"><div class="container footer-grid"><img src="../../blue-ridge-soft-power-washing-logo.svg?v=white" alt="Blue Ridge Soft &amp; Power washing LLC"><p>We don’t cut corners.<br>We clean them.</p><div><a href="../../services/pressure-washing/">Pressure washing</a><a href="../../services/house-washing/">House washing</a><a href="../../services/roof-cleaning/">Roof cleaning</a><a href="../../services/concrete-cleaning/">Concrete cleaning</a><a href="../../services/window-cleaning/">Window cleaning</a><a href="../../#quote">Free quote</a></div></div><div class="container copyright"><span>© <span id="year"></span> Blue Ridge Soft &amp; Power washing LLC</span><span>Teays Valley, West Virginia</span></div></footer>
+  <footer class="seo-footer"><div class="container footer-grid"><img src="../../blue-ridge-soft-power-washing-logo.svg?v=white" alt="Blue Ridge Soft &amp; Power washing LLC" width="960" height="480"><p>We don’t cut corners.<br>We clean them.</p><div><a href="../../services/pressure-washing/">Pressure washing</a><a href="../../services/house-washing/">House washing</a><a href="../../services/roof-cleaning/">Roof cleaning</a><a href="../../services/concrete-cleaning/">Concrete cleaning</a><a href="../../services/window-cleaning/">Window cleaning</a><a href="../../services/deck-cleaning/">Deck cleaning</a><a href="../../#quote">Free quote</a></div></div><div class="container copyright"><span>© <span id="year"></span> Blue Ridge Soft &amp; Power washing LLC</span><span>Teays Valley, West Virginia</span></div></footer>
   <script src="../../script.js"></script>
 </body>
 </html>`;
@@ -289,7 +341,7 @@ function shell({ title, description, canonical, kicker, h1, lede, image, imageAl
 
 for (const service of services) {
   const canonical = `${domain}/services/${service.slug}/`;
-  const body = `<h2>${service.name} for West Virginia properties</h2><p>${service.intro}</p><h3>Surfaces and projects we evaluate</h3><ul>${service.bestFor.map((item) => `<li>${item}</li>`).join("")}</ul><h3>How the service is planned</h3><p>${service.method}</p><h3>What to expect from cleaning</h3><p>${service.results}</p><div class="faq"><p class="overline">Common questions</p><h2>${service.name} questions</h2>${service.faqs.map(([question, answer]) => `<details><summary>${question}</summary><p>${answer}</p></details>`).join("")}</div>`;
+  const body = `<h2>Planning your ${service.name.toLowerCase()} service</h2><p>Start with the property address, photos and the surfaces you would like cleaned. Your quote identifies the included areas and the cleaning approach before an appointment is scheduled.</p><h3>Surfaces and projects we evaluate</h3><ul>${service.bestFor.map((item) => `<li>${item}</li>`).join("")}</ul><h3>How the service is planned</h3><p>${service.method}</p><h3>Combine services in one quote</h3><p>Ask about <a href="../../services/house-washing/">house washing</a>, <a href="../../services/concrete-cleaning/">driveway cleaning</a> and <a href="../../services/deck-cleaning/">deck cleaning</a> when planning work at the same property.</p><h3>What to expect from cleaning</h3><p>${service.results}</p><div class="faq"><p class="overline">Common questions</p><h2>${service.name} questions</h2>${service.faqs.map(([question, answer]) => `<details><summary>${question}</summary><p>${answer}</p></details>`).join("")}</div>`;
   const schema = { "@context": "https://schema.org", "@graph": [
     { "@type": "Service", "@id": `${canonical}#service`, name: service.name, url: canonical, description: service.description, provider: { "@type": "ProfessionalService", "@id": `${domain}/#business`, name: businessName }, areaServed: locations.map(({ city }) => ({ "@type": "City", name: `${city}, West Virginia` })) },
     { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: `${domain}/` }, { "@type": "ListItem", position: 2, name: service.name, item: canonical }] }
@@ -302,16 +354,24 @@ for (const service of services) {
 
 for (const location of locations) {
   const canonical = `${domain}/locations/${location.slug}/`;
-  const title = `Soft & Power Washing ${location.city} WV | Blue Ridge Soft & Power washing LLC`;
-  const body = `<h2>Exterior cleaning in ${location.city}, West Virginia</h2><p>${location.intro}</p><h3>A cleaning method selected for the surface</h3><p>${location.detail}</p><h3>Services available in ${location.city}</h3><ul><li>Power and pressure washing for durable concrete and selected exterior surfaces</li><li>House washing and low-pressure soft washing</li><li>Driveway, sidewalk and patio cleaning</li><li>Roof cleaning after a material and access evaluation</li><li>Exterior window cleaning and recurring plans</li><li>Commercial exterior and concrete cleaning</li></ul><h3>Nearby service availability</h3><p>${location.nearby}</p><div class="faq"><p class="overline">Local quote questions</p><h2>Planning your ${location.city} cleaning</h2><details><summary>How do I request a quote?</summary><p>Send the property address, the surfaces you want cleaned and any helpful photos through the quote form. We will confirm whether an on-site look is needed.</p></details><details><summary>Can I combine multiple services?</summary><p>Yes. House washing, concrete cleaning, exterior windows and other requested areas can be reviewed together and listed in one quote.</p></details><details><summary>Do you serve areas near ${location.city}?</summary><p>${location.nearby}</p></details></div>`;
+  const title = `Pressure Washing ${location.city} WV | Blue Ridge`;
+  const body = `<h2>Plan your exterior cleaning in ${location.city}</h2><p>Choose the surfaces you want cleaned and request a quote for the work at your property. We confirm the material, access and included areas before scheduling.</p><h3>A cleaning method selected for the surface</h3><p>${location.detail}</p><h3>Services available in ${location.city}</h3><ul><li><a href="../../services/pressure-washing/">Pressure washing</a> for durable concrete and selected exterior surfaces</li><li><a href="../../services/house-washing/">House washing</a> and <a href="../../services/soft-washing/">low-pressure soft washing</a></li><li><a href="../../services/concrete-cleaning/">Driveway, sidewalk and patio cleaning</a></li><li><a href="../../services/deck-cleaning/">Wood and composite deck cleaning</a></li><li><a href="../../services/roof-cleaning/">Roof cleaning</a> after a material and access evaluation</li><li><a href="../../services/window-cleaning/">Exterior window cleaning</a> and recurring plans</li><li><a href="../../services/commercial-exterior-cleaning/">Commercial exterior and concrete cleaning</a></li></ul><h3>Nearby service availability</h3><p>${location.nearby}</p><div class="faq"><p class="overline">Local quote questions</p><h2>Planning your ${location.city} cleaning</h2><details><summary>How do I request a quote?</summary><p>Send the property address, the surfaces you want cleaned and any helpful photos through the quote form. We will confirm whether an on-site look is needed.</p></details><details><summary>Can I combine multiple services?</summary><p>Yes. House washing, concrete cleaning, exterior windows and other requested areas can be reviewed together and listed in one quote.</p></details><details><summary>Do you serve areas near ${location.city}?</summary><p>${location.nearby}</p></details></div>`;
   const schema = { "@context": "https://schema.org", "@graph": [
     { "@type": "Service", "@id": `${canonical}#service-area`, name: `Exterior Cleaning in ${location.city}, West Virginia`, url: canonical, description: location.description, provider: { "@type": "ProfessionalService", "@id": `${domain}/#business`, name: businessName }, areaServed: { "@type": "City", name: `${location.city}, West Virginia`, containedInPlace: { "@type": "AdministrativeArea", name: `${location.county}, West Virginia` } }, hasOfferCatalog: { "@type": "OfferCatalog", name: `Exterior cleaning services in ${location.city}`, itemListElement: services.map((service) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: service.name, url: `${domain}/services/${service.slug}/` } })) } },
     { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: `${domain}/` }, { "@type": "ListItem", position: 2, name: `${location.city}, WV`, item: canonical }] }
   ] };
-  const html = shell({ title, description: location.description, canonical, kicker: `${location.city}, ${location.county}`, h1: `Soft &amp; power washing <em>in ${location.city}, WV.</em>`, lede: location.intro, image: "west-virginia-service-area.png", imageAlt: `West Virginia service area for exterior cleaning in ${location.city}`, body, lowerTitle: "Exterior cleaning services", lowerLinks: serviceLinks, schema });
+  const html = shell({ title, description: location.description, canonical, kicker: `${location.city}, ${location.county}`, h1: `Pressure &amp; soft washing <em>in ${location.city}, WV.</em>`, lede: location.intro, image: "west-virginia-service-area.png", imageAlt: `West Virginia service area for exterior cleaning in ${location.city}`, body, lowerTitle: "Exterior cleaning services", lowerLinks: serviceLinks, schema });
   const directory = new URL(`locations/${location.slug}/`, root);
   await mkdir(directory, { recursive: true });
   await writeFile(new URL("index.html", directory), html);
 }
 
 console.log(`Generated ${services.length} service pages and ${locations.length} location pages.`);
+
+const modified = '2026-09-25';
+const sitemapUrls = [domain + '/', ...services.map(s => domain + '/services/' + s.slug + '/'), ...locations.map(l => domain + '/locations/' + l.slug + '/')];
+await writeFile(new URL('sitemap.xml', root), '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + sitemapUrls.map(url => '  <url><loc>' + url + '</loc><lastmod>' + modified + '</lastmod></url>').join('\n') + '\n</urlset>\n');
+
+const stylesheets = ["styles.css","brand-logo.css","window-plans.css","quarterly-value.css","microsoft-form.css","google-reviews.css","hero-photo.css","seo-pages.css"];
+const cssParts = await Promise.all(stylesheets.map(file => readFile(new URL(file, root), 'utf8')));
+await writeFile(new URL('site.css', root), cssParts.join('\n'));

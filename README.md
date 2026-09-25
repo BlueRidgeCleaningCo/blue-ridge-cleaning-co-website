@@ -14,4 +14,10 @@ The business name is Blue Ridge Soft & Power washing LLC. The header and footer 
 
 ## Search content
 
-The homepage, seven service pages and thirteen West Virginia location pages contain service-specific titles, descriptions, canonical URLs and structured data. The existing page URLs are preserved. Key service terms include soft washing, power washing, pressure washing, house washing, roof cleaning, concrete cleaning, driveway cleaning and exterior window cleaning.
+The homepage, eight service pages and thirteen West Virginia location pages contain service-specific titles, descriptions, canonical URLs and structured data. The existing page URLs are preserved. Key service terms include soft washing, power washing, pressure washing, house washing, roof cleaning, concrete cleaning, driveway cleaning and exterior window cleaning.
+
+## SEO checks and publishing
+
+Run `node generate-seo-pages.mjs` to regenerate service/location pages, the sitemap and the shared CSS bundle. Run `node seo-check.mjs` before publishing. The checker validates local links and assets, unique titles/descriptions, headings, structured data and sitemap coverage. It does not predict Google rankings.
+
+Keep the generator’s editorial sitemap modification date aligned with actual significant content updates, rather than changing dates on every build. Original photographs remain available for social metadata; smaller WebP versions are embedded in SVG containers for on-page delivery.
