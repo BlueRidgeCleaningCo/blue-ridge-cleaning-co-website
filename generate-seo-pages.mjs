@@ -326,7 +326,7 @@ function shell({ title, description, canonical, kicker, h1, lede, image, imageAl
   <header class="header seo-header" id="top"><div class="container nav-row">
     <a class="logo" href="../../" aria-label="Blue Ridge Soft &amp; Power washing LLC home"><img src="../../blue-ridge-soft-power-washing-logo.svg?v=white" alt="Blue Ridge Soft &amp; Power washing LLC" width="960" height="480"></a>
     <button class="menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span><b class="sr-only">Open menu</b></button>
-    <nav id="nav" aria-label="Primary navigation"><a href="../../#services">Services</a><a href="../../#work">Our work</a><a href="../../#areas">Service area</a><a class="nav-cta" href="${quoteUrl}" target="_blank" rel="noopener noreferrer">Free quote</a></nav>
+    <nav id="nav" aria-label="Primary navigation"><a href="../../services/">Services</a><a href="../../before-and-after/">Before &amp; After</a><a href="../../#areas">Service area</a><a class="nav-cta" href="${quoteUrl}" target="_blank" rel="noopener noreferrer">Free quote</a></nav>
   </div></header>
   <main class="seo-main" id="main">
     <section class="seo-hero"><div class="container seo-hero-grid"><div><div class="breadcrumbs"><a href="../../">Home</a><span>/</span><span>${kicker}</span></div><p class="overline">${kicker}</p><h1>${h1}</h1><p>${escapeHtml(lede)}</p><div class="actions"><a class="button" href="${quoteUrl}" target="_blank" rel="noopener noreferrer">Request a free quote <span>→</span></a><a class="call" href="tel:${phoneHref}"><small>Call or text</small>${phoneDisplay}</a></div></div><figure><img src="../../${displayImage}" alt="${escapeHtml(imageAlt)}" width="${imageSize.width}" height="${imageSize.height}" decoding="async"></figure></div></section>
@@ -341,7 +341,7 @@ function shell({ title, description, canonical, kicker, h1, lede, image, imageAl
 
 for (const service of services) {
   const canonical = `${domain}/services/${service.slug}/`;
-  const body = `<h2>Planning your ${service.name.toLowerCase()} service</h2><p>Start with the property address, photos and the surfaces you would like cleaned. Your quote identifies the included areas and the cleaning approach before an appointment is scheduled.</p><h3>Surfaces and projects we evaluate</h3><ul>${service.bestFor.map((item) => `<li>${item}</li>`).join("")}</ul><h3>How the service is planned</h3><p>${service.method}</p><h3>Combine services in one quote</h3><p>Ask about <a href="../../services/house-washing/">house washing</a>, <a href="../../services/concrete-cleaning/">driveway cleaning</a> and <a href="../../services/deck-cleaning/">deck cleaning</a> when planning work at the same property.</p><h3>What to expect from cleaning</h3><p>${service.results}</p><div class="faq"><p class="overline">Common questions</p><h2>${service.name} questions</h2>${service.faqs.map(([question, answer]) => `<details><summary>${question}</summary><p>${answer}</p></details>`).join("")}</div>`;
+  const body = `<h2>Planning your ${service.name.toLowerCase()} service</h2><p>Start with the property address, photos and the surfaces you would like cleaned. Your quote identifies the included areas and the cleaning approach before an appointment is scheduled.</p><h3>Surfaces and projects we evaluate</h3><ul>${service.bestFor.map((item) => `<li>${item}</li>`).join("")}</ul><h3>How the service is planned</h3><p>${service.method}</p><h3>Combine services in one quote</h3><p>Ask about <a href="../../services/house-washing/">house washing</a>, <a href="../../services/concrete-cleaning/">driveway cleaning</a> and <a href="../../services/deck-cleaning/">deck cleaning</a> when planning work at the same property.</p><p><a href="../../before-and-after/">See before &amp; after photos from our exterior cleaning jobs →</a></p><h3>What to expect from cleaning</h3><p>${service.results}</p><div class="faq"><p class="overline">Common questions</p><h2>${service.name} questions</h2>${service.faqs.map(([question, answer]) => `<details><summary>${question}</summary><p>${answer}</p></details>`).join("")}</div>`;
   const schema = { "@context": "https://schema.org", "@graph": [
     { "@type": "Service", "@id": `${canonical}#service`, name: service.name, url: canonical, description: service.description, provider: { "@type": "ProfessionalService", "@id": `${domain}/#business`, name: businessName }, areaServed: locations.map(({ city }) => ({ "@type": "City", name: `${city}, West Virginia` })) },
     { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: `${domain}/` }, { "@type": "ListItem", position: 2, name: service.name, item: canonical }] }
@@ -368,10 +368,12 @@ for (const location of locations) {
 
 console.log(`Generated ${services.length} service pages and ${locations.length} location pages.`);
 
-const modified = '2026-09-25';
-const sitemapUrls = [domain + '/', ...services.map(s => domain + '/services/' + s.slug + '/'), ...locations.map(l => domain + '/locations/' + l.slug + '/')];
+const modified = '2026-09-27';
+const sitemapUrls = [domain + '/', domain + '/services/', domain + '/before-and-after/', ...services.map(s => domain + '/services/' + s.slug + '/'), ...locations.map(l => domain + '/locations/' + l.slug + '/')];
 await writeFile(new URL('sitemap.xml', root), '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + sitemapUrls.map(url => '  <url><loc>' + url + '</loc><lastmod>' + modified + '</lastmod></url>').join('\n') + '\n</urlset>\n');
 
 const stylesheets = ["styles.css","brand-logo.css","window-plans.css","quarterly-value.css","microsoft-form.css","google-reviews.css","hero-photo.css","seo-pages.css"];
 const cssParts = await Promise.all(stylesheets.map(file => readFile(new URL(file, root), 'utf8')));
 await writeFile(new URL('site.css', root), cssParts.join('\n'));
+
+await import("./generate-gallery-pages.mjs");
