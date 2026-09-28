@@ -6,3 +6,4 @@
 .collection-gallery .gallery .project img{display:block;width:100%;height:auto;max-height:none;object-fit:contain}
 .collection-gallery h3{margin-top:18px}.collection-gallery article p{margin-top:8px}.collection-quote{background:var(--sky)}.collection-quote p{max-width:700px;margin:20px 0}.collection-link{margin-top:32px}
 @media(max-width:700px){.collection-hero{padding:140px 0 44px}.collection-gallery .gallery{grid-template-columns:1fr;gap:32px}.collection-hero p{font-size:16px}}
+.collection-gallery article,.collection-video{scroll-margin-top:145px}.collection-video{background:var(--cream)}.collection-video video{display:block;width:min(100%,640px);height:auto;background:var(--navy);margin:25px 0;border:2px solid var(--navy)}.collection-video p{max-width:740px;margin:18px 0}

@@ -1,6 +1,7 @@
 import { mkdir, writeFile, readFile } from "node:fs/promises";
 
 const root = new URL("./", import.meta.url);
+const recentJobs = JSON.parse(await readFile(new URL("recent-jobs.json", root), "utf8"));
 const businessName = "Blue Ridge Soft & Power washing LLC";
 const escapeHtml = (value) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 const domain = "https://brexteriorcleaning.com";
@@ -295,6 +296,10 @@ const serviceLinks = services.map((service) => `<a class="link-card" href="../..
 const locationLinks = locations.map((location) => `<a class="link-card" href="../../locations/${location.slug}/"><strong>${location.city}</strong><span>${location.county}, West Virginia</span></a>`).join("");
 
 function shell({ title, description, canonical, kicker, h1, lede, image, imageAlt, body, lowerTitle, lowerLinks, schema }) {
+  const relatedJobs = recentJobs.filter(job => canonical.endsWith('/locations/' + job.location + '/') || canonical.endsWith('/services/' + job.service + '/'));
+  let projectLinks = relatedJobs.map(job => '<li><a href="../../before-and-after/#' + job.id + '">' + job.title + ' in ' + job.city + ', WV — before and after</a></li>').join('');
+  if (canonical.endsWith('/locations/charleston-wv/')) projectLinks += '<li><a href="../../before-and-after/#wood-fence-cleaning-charleston-wv">Watch wood fence cleaning in Charleston, WV</a></li>';
+  if (projectLinks) body = '<h2>See a completed local project</h2><ul>' + projectLinks + '</ul>' + body;
   const displayImage = optimizedPhotos[image] || image;
   const imageSize = photoSizes[displayImage] || { width: 900, height: 650 };
   return `<!doctype html>
