@@ -4,7 +4,7 @@ const root = new URL("./", import.meta.url);
 const recentJobs = JSON.parse(await readFile(new URL("recent-jobs.json", root), "utf8"));
 const businessName = "Blue Ridge Soft & Power washing LLC";
 const escapeHtml = (value) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
-const domain = "https://brexteriorcleaning.com";
+const domain = "https://blueridgespw.com";
 const quoteUrl = "https://forms.cloud.microsoft/r/fVtAtEP2u7";
 const phoneDisplay = "(304) 549-2098";
 const phoneHref = "+13045492098";

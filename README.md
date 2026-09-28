@@ -1,6 +1,6 @@
 # Blue Ridge Soft & Power washing LLC website
 
-Static website hosted by GitHub Pages from the root of the main branch at https://brexteriorcleaning.com/.
+Static website hosted by GitHub Pages from the root of the main branch at https://blueridgespw.com/.
 
 ## Updating the site
 

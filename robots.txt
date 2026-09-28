@@ -4,4 +4,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://brexteriorcleaning.com/sitemap.xml
+Sitemap: https://blueridgespw.com/sitemap.xml

@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('./', import.meta.url));
-const origin = 'https://brexteriorcleaning.com';
+const origin = 'https://blueridgespw.com';
 const files = [];
 async function walk(directory) {
   for (const entry of await readdir(directory, { withFileTypes: true })) {
