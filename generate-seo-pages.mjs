@@ -382,3 +382,9 @@ const cssParts = await Promise.all(stylesheets.map(file => readFile(new URL(file
 await writeFile(new URL('site.css', root), cssParts.join('\n'));
 
 await import("./generate-gallery-pages.mjs");
+// Keep the homepage inline styles synchronized with the shared bundle.
+const homepageUrl = new URL("index.html", root);
+const homepageHtml = await readFile(homepageUrl, "utf8");
+if (homepageHtml.includes('id="homepage-styles"')) {
+  await writeFile(homepageUrl, homepageHtml.replace(/<style id="homepage-styles">[\s\S]*?<\/style>/, () => '<style id="homepage-styles">\n' + cssParts.join("\n") + "\n</style>"));
+}
