@@ -1,0 +1,46 @@
+[
+  {
+    "id": "basketball-hoop-cleaning-nitro-wv",
+    "title": "Basketball hoop cleaning",
+    "city": "Nitro",
+    "location": "nitro-wv",
+    "description": "Before and after basketball backboard cleaning in Nitro, West Virginia, showing dark surface buildup removed.",
+    "service": "pressure-washing",
+    "file": "media/basketball-hoop-cleaning-nitro-wv.webp",
+    "width": 1290,
+    "height": 666
+  },
+  {
+    "id": "brick-mailbox-cleaning-milton-wv",
+    "title": "Brick mailbox cleaning",
+    "city": "Milton",
+    "location": "milton-wv",
+    "description": "Before and after brick mailbox and cap cleaning in Milton, West Virginia.",
+    "service": "pressure-washing",
+    "file": "media/brick-mailbox-cleaning-milton-wv.webp",
+    "width": 1290,
+    "height": 954
+  },
+  {
+    "id": "concrete-step-cleaning-hurricane-wv",
+    "title": "Concrete entry and step cleaning",
+    "city": "Hurricane",
+    "location": "hurricane-wv",
+    "description": "Before and after concrete entry steps and front walkway pressure washing in Hurricane, West Virginia.",
+    "service": "concrete-cleaning",
+    "file": "media/concrete-step-cleaning-hurricane-wv.webp",
+    "width": 1290,
+    "height": 569
+  },
+  {
+    "id": "concrete-walkway-cleaning-hurricane-wv",
+    "title": "Concrete walkway cleaning",
+    "city": "Hurricane",
+    "location": "hurricane-wv",
+    "description": "Before and after a curved concrete walkway cleaning in Hurricane, West Virginia.",
+    "service": "concrete-cleaning",
+    "file": "media/concrete-walkway-cleaning-hurricane-wv.webp",
+    "width": 1536,
+    "height": 954
+  }
+]
