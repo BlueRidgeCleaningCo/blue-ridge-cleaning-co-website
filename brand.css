@@ -24,7 +24,7 @@ body{color:var(--brand-ink);background:#fff}
 .hero .text-link{font-size:19px;text-decoration-thickness:3px;color:var(--brand-navy)}
 .trust-list{color:var(--brand-navy);font-weight:800;gap:20px}
 .trust-list li:before{color:var(--brand-navy)}
-.brand-line{font:800 17px "Manrope",sans-serif;text-transform:uppercase;letter-spacing:.035em;color:var(--brand-navy);margin:22px 0 0}
+.brand-line{font:800 17px "Arial",sans-serif;text-transform:uppercase;letter-spacing:.035em;color:var(--brand-navy);margin:22px 0 0}
 .ridge.far{fill:#c9f2f4}.ridge.near{fill:#62d3dc}.sun{background:#fff}
 .house{fill:#fff;stroke:var(--brand-navy)}.roof,.ground{stroke:var(--brand-navy)}.window{fill:var(--brand-turquoise);stroke:var(--brand-navy)}.door{fill:var(--brand-navy);stroke:var(--brand-navy)}
 .hero-badge{border-left:0;border-top:8px solid var(--brand-turquoise);border-radius:5px;background:var(--brand-navy);color:#fff;box-shadow:12px 12px 0 rgba(7,52,72,.16)}
@@ -51,7 +51,7 @@ body{color:var(--brand-ink);background:#fff}
 .number-card{border-radius:3px;background:var(--brand-navy)}
 .reviews-section{background:var(--brand-pale);border-top:8px solid var(--brand-turquoise)}
 .google-rating{align-self:end;background:var(--brand-navy);color:#fff;padding:18px 22px;border-left:8px solid var(--brand-turquoise)}
-.google-rating strong{font:800 28px "Manrope",sans-serif}.google-rating strong span{color:var(--brand-turquoise);font-size:15px;letter-spacing:2px}.google-rating p{margin:2px 0;font-size:13px;color:#cdecef}.google-rating a{font-size:13px;font-weight:800;color:#fff;text-underline-offset:4px}
+.google-rating strong{font:800 28px "Arial",sans-serif}.google-rating strong span{color:var(--brand-turquoise);font-size:15px;letter-spacing:2px}.google-rating p{margin:2px 0;font-size:13px;color:#cdecef}.google-rating a{font-size:13px;font-weight:800;color:#fff;text-underline-offset:4px}
 .reviews-section .placeholder-note{color:#56737a;margin:-35px 0 28px}
 .review{border-radius:5px;border:2px solid var(--brand-navy);box-shadow:7px 7px 0 var(--brand-turquoise)}
 .stars{color:var(--brand-turquoise-dark)}

@@ -319,10 +319,10 @@ function shell({ title, description, canonical, kicker, h1, lede, image, imageAl
   <meta property="og:type" content="website">
   <meta property="og:image" content="${domain}/${image}">
   <title>${escapeHtml(title)}</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../site.css?v=20260925">
+  
+  
+  
+  <link rel="stylesheet" href="../../site.css?v=20260928">
   <style>.seo-header{position:fixed}</style>
   <script type="application/ld+json">${JSON.stringify(schema)}</script>
 </head>
