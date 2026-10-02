@@ -13,18 +13,18 @@ const services = [
   {
     slug: "pressure-washing",
     name: "Pressure Washing",
-    title: "Power & Pressure Washing in Teays Valley WV | Blue Ridge Soft & Power washing LLC",
-    description: "Power washing and pressure washing for driveways, concrete, patios and walkways in Teays Valley, Hurricane, Winfield and Charleston, WV. Get a free quote.",
-    kicker: "Pressure washing in Teays Valley and surrounding areas",
+    title: "Power & Pressure Washing in Hurricane WV | Blue Ridge Soft & Power washing LLC",
+    description: "Power washing and pressure washing for driveways, concrete, patios and walkways in Hurricane, Teays Valley, Winfield and Charleston, WV. Get a free quote.",
+    kicker: "Pressure washing in Hurricane and surrounding areas",
     h1: "Power &amp; pressure washing <em>for a cleaner property.</em>",
     image: "concrete-cleaning-before-after.jpg",
     imageAlt: "Before and after concrete pressure washing by Blue Ridge Soft & Power washing LLC",
-    intro: "Blue Ridge Soft & Power washing LLC provides power washing and pressure washing services for durable outdoor surfaces throughout Teays Valley, Hurricane, Winfield, Charleston and nearby West Virginia communities. We evaluate the material and buildup before choosing the pressure, equipment and cleaning approach for the job.",
+    intro: "Blue Ridge Soft & Power washing LLC provides power washing and pressure washing services for durable outdoor surfaces throughout Hurricane, Teays Valley, Winfield, Charleston and nearby West Virginia communities. We evaluate the material and buildup before choosing the pressure, equipment and cleaning approach for the job.",
     bestFor: ["Driveways and concrete pads", "Sidewalks and walkways", "Patios and other durable outdoor surfaces", "Selected brick, stone, decks and fences after surface evaluation"],
     method: "Pressure washing is best reserved for materials that can tolerate mechanical cleaning. Before starting, we look at the surface condition, nearby landscaping, drainage and the type of staining present. The goal is to clean effectively without treating every surface the same way.",
     results: "A professional cleaning can remove common dirt, organic buildup and surface grime. Some permanent discoloration, oxidation, rust, oil, mulch dye or deeply embedded stains may require a separate treatment and cannot be guaranteed to disappear completely. We explain those limitations before the work begins.",
     faqs: [
-      ["Do you offer power washing?", "Yes. If you are looking for power washing in Teays Valley or nearby West Virginia communities, request a quote through our pressure-washing service. We confirm the equipment and cleaning method for your surfaces before scheduling."],
+      ["Do you offer power washing?", "Yes. If you are looking for power washing in Hurricane or nearby West Virginia communities, request a quote through our pressure-washing service. We confirm the equipment and cleaning method for your surfaces before scheduling."],
       ["Can every exterior surface be pressure washed?", "No. Siding, roofing and other sensitive materials often require a lower-pressure soft-washing approach. We choose the method based on the surface."],
       ["Do you clean driveways and sidewalks together?", "Yes. Your quote can include the driveway, connecting walkways, patios or other concrete areas you want cleaned."],
       ["Can you remove every stain from concrete?", "Results depend on the stain and how long it has been present. We identify visible problem areas and set realistic expectations before cleaning."]
@@ -33,13 +33,13 @@ const services = [
   {
     slug: "house-washing",
     name: "House Washing",
-    title: "House Washing in Teays Valley WV | Blue Ridge Soft & Power washing LLC",
-    description: "Exterior house washing for siding, trim and accessible exterior surfaces in Teays Valley, Hurricane, Winfield, Charleston and nearby West Virginia areas.",
+    title: "House Washing in Hurricane WV | Blue Ridge Soft & Power washing LLC",
+    description: "Exterior house washing for siding, trim and accessible exterior surfaces in Hurricane, Teays Valley, Winfield, Charleston and nearby West Virginia areas.",
     kicker: "Exterior house washing in West Virginia",
     h1: "House washing <em>from top to bottom.</em>",
     image: "house-soft-wash-before-after.jpg",
     imageAlt: "Before and after house washing on white siding in West Virginia",
-    intro: "Our house-washing service is designed for homeowners who want exterior siding and related surfaces cleaned with a method selected for the material. Blue Ridge Soft & Power washing LLC serves Teays Valley and nearby communities with clear quotes and careful preparation around the property.",
+    intro: "Our house-washing service is designed for homeowners who want exterior siding and related surfaces cleaned with a method selected for the material. Blue Ridge Soft & Power washing LLC serves Hurricane and nearby communities with clear quotes and careful preparation around the property.",
     bestFor: ["Vinyl siding", "Painted exterior surfaces after evaluation", "Exterior trim and accessible soffits", "Attached exterior areas included in the confirmed quote"],
     method: "Most residential siding is cleaned with a soft-washing process rather than aggressive pressure. Cleaning solution is applied at controlled pressure, allowed appropriate contact time and rinsed thoroughly. More durable areas can be handled separately when pressure washing is appropriate.",
     results: "House washing targets dirt and organic buildup on the exterior. Oxidation, fading, damaged paint, artillery fungus and permanent staining are separate conditions and may remain visible after standard cleaning. We can evaluate questionable areas before quoting the full project.",
@@ -52,8 +52,8 @@ const services = [
   {
     slug: "soft-washing",
     name: "Soft Washing",
-    title: "Soft Washing Teays Valley WV | Blue Ridge Soft & Power washing LLC",
-    description: "Low-pressure soft washing for siding and other sensitive exterior surfaces in Teays Valley, Hurricane, Winfield, Charleston and surrounding WV communities.",
+    title: "Soft Washing Hurricane WV | Blue Ridge Soft & Power washing LLC",
+    description: "Low-pressure soft washing for siding and other sensitive exterior surfaces in Hurricane, Teays Valley, Winfield, Charleston and surrounding WV communities.",
     kicker: "Low-pressure exterior cleaning",
     h1: "Soft washing <em>for sensitive surfaces.</em>",
     image: "siding-soft-wash-before-after.jpg",
@@ -71,13 +71,13 @@ const services = [
   {
     slug: "concrete-cleaning",
     name: "Concrete Cleaning",
-    title: "Concrete Cleaning Teays Valley WV | Blue Ridge Soft & Power washing LLC",
-    description: "Driveway, sidewalk, patio and concrete cleaning in Teays Valley, Hurricane, Winfield, Charleston and nearby West Virginia communities.",
+    title: "Concrete Cleaning Hurricane WV | Blue Ridge Soft & Power washing LLC",
+    description: "Driveway, sidewalk, patio and concrete cleaning in Hurricane, Teays Valley, Winfield, Charleston and nearby West Virginia communities.",
     kicker: "Driveway and concrete cleaning",
     h1: "Concrete cleaning <em>with an even finish.</em>",
     image: "walkway-cleaning-before-after.jpg",
     imageAlt: "Before and after walkway and concrete cleaning in West Virginia",
-    intro: "Blue Ridge Soft & Power washing LLC cleans residential and commercial concrete throughout Teays Valley and surrounding West Virginia communities. Driveways, sidewalks, patios and concrete pads are quoted according to their size, condition, access and visible staining.",
+    intro: "Blue Ridge Soft & Power washing LLC cleans residential and commercial concrete throughout Hurricane and surrounding West Virginia communities. Driveways, sidewalks, patios and concrete pads are quoted according to their size, condition, access and visible staining.",
     bestFor: ["Residential driveways", "Sidewalks and front walkways", "Concrete patios and pads", "Commercial sidewalks and selected concrete areas"],
     method: "Concrete cleaning can involve pretreatment, surface cleaning, detailed rinsing and an appropriate post-treatment when needed. Edges and transitions are handled as part of the confirmed work area so the finished project looks consistent.",
     results: "Standard cleaning is effective for common dirt and organic buildup. Oil, rust, fertilizer marks, mulch dye, paint and deeply absorbed discoloration can require specialty treatment and may not be fully removable. Those conditions are evaluated separately.",
@@ -90,8 +90,8 @@ const services = [
   {
     slug: "roof-cleaning",
     name: "Roof Cleaning",
-    title: "Roof Cleaning Teays Valley WV | Blue Ridge Soft & Power washing LLC",
-    description: "Low-pressure roof cleaning for appropriate roofing systems in Teays Valley, Hurricane, Winfield, Charleston and nearby West Virginia communities.",
+    title: "Roof Cleaning Hurricane WV | Blue Ridge Soft & Power washing LLC",
+    description: "Low-pressure roof cleaning for appropriate roofing systems in Hurricane, Teays Valley, Winfield, Charleston and nearby West Virginia communities.",
     kicker: "Low-pressure roof cleaning",
     h1: "Roof cleaning <em>without aggressive pressure.</em>",
     image: "metal-roof-wash-before-after.png",
@@ -109,8 +109,8 @@ const services = [
   {
     slug: "window-cleaning",
     name: "Exterior Window Cleaning",
-    title: "Window Cleaning Teays Valley WV | Blue Ridge Soft & Power washing LLC",
-    description: "Exterior window cleaning and recurring window service plans in Teays Valley, Hurricane, Winfield, Charleston and surrounding West Virginia areas.",
+    title: "Window Cleaning Hurricane WV | Blue Ridge Soft & Power washing LLC",
+    description: "Exterior window cleaning and recurring window service plans in Hurricane, Teays Valley, Winfield, Charleston and surrounding West Virginia areas.",
     kicker: "Exterior window cleaning plans",
     h1: "Clearer exterior windows <em>throughout the year.</em>",
     image: "blue-ridge-gate-cleaning-hero.png",
@@ -129,12 +129,12 @@ const services = [
     slug: "commercial-exterior-cleaning",
     name: "Commercial Exterior Cleaning",
     title: "Commercial Cleaning Charleston WV | Blue Ridge Soft & Power washing LLC",
-    description: "Commercial pressure washing and exterior cleaning for buildings, sidewalks and concrete in Charleston, Teays Valley and surrounding West Virginia areas.",
+    description: "Commercial pressure washing and exterior cleaning for buildings, sidewalks and concrete in Hurricane, Charleston and surrounding West Virginia areas.",
     kicker: "Commercial exterior cleaning in West Virginia",
     h1: "Commercial cleaning <em>planned around your property.</em>",
     image: "concrete-pad-before-after.jpg",
     imageAlt: "Before and after commercial-style concrete pad cleaning",
-    intro: "Blue Ridge Soft & Power washing LLC provides commercial exterior cleaning for properties in Charleston, Teays Valley and surrounding West Virginia communities. Each project is reviewed according to the building materials, concrete area, access, water availability and operating schedule.",
+    intro: "Blue Ridge Soft & Power washing LLC provides commercial exterior cleaning for properties in Hurricane, Charleston and surrounding West Virginia communities. Each project is reviewed according to the building materials, concrete area, access, water availability and operating schedule.",
     bestFor: ["Commercial sidewalks and entrances", "Exterior building surfaces", "Concrete pads and selected parking areas", "Property managers, landlords and local businesses"],
     method: "Commercial work begins with a defined scope so entrances, sensitive materials, drainage and customer access can be considered. Pressure washing or soft washing is selected by surface, and larger properties can be divided into manageable work areas when needed.",
     results: "A site-specific quote identifies the included surfaces and expected cleaning outcome. Permanent staining, oxidation, damaged coatings, gum, oil, rust or other specialty conditions may require separate treatment. Scheduling is confirmed before work begins.",
@@ -149,13 +149,13 @@ const services = [
 services.push({
   "slug": "deck-cleaning",
   "name": "Deck Cleaning",
-  "title": "Deck Cleaning in Teays Valley & Charleston WV | Blue Ridge",
-  "description": "Wood and composite deck cleaning in Teays Valley, Charleston, Hurricane and nearby WV communities. Request a surface-specific quote from Blue Ridge.",
+  "title": "Deck Cleaning in Hurricane & Charleston WV | Blue Ridge",
+  "description": "Wood and composite deck cleaning in Hurricane, Teays Valley, Charleston and nearby WV communities. Request a surface-specific quote from Blue Ridge.",
   "kicker": "Wood and composite deck cleaning in West Virginia",
   "h1": "Deck cleaning <em>for wood and composite.</em>",
   "image": "blue-ridge-gate-cleaning-hero.png",
   "imageAlt": "Blue Ridge team cleaning an outdoor gate",
-  "intro": "Blue Ridge Soft & Power washing LLC cleans wood and composite decks in Teays Valley, Charleston, Hurricane and nearby West Virginia communities. Tell us the deck material, approximate size and condition so we can plan a cleaning method suited to the boards, railings and existing finish.",
+  "intro": "Blue Ridge Soft & Power washing LLC cleans wood and composite decks in Hurricane, Teays Valley, Charleston and nearby West Virginia communities. Tell us the deck material, approximate size and condition so we can plan a cleaning method suited to the boards, railings and existing finish.",
   "bestFor": [
     "Wood deck boards and accessible railings",
     "Composite decking with a material-appropriate cleaning method",
@@ -188,7 +188,7 @@ const locations = [
   {
     slug: "teays-valley-wv", city: "Teays Valley", county: "Putnam County",
     description: "Pressure washing, house washing, concrete cleaning, roof cleaning and exterior window cleaning in Teays Valley, West Virginia.",
-    intro: "Blue Ridge Soft & Power washing LLC is based in the Teays Valley area and provides exterior cleaning for homes and businesses throughout the surrounding Putnam County communities. Customers can request one service or combine house washing, concrete cleaning, roof cleaning and exterior windows into a single quote.",
+    intro: "Blue Ridge Soft & Power washing LLC serves the Teays Valley area and provides exterior cleaning for homes and businesses throughout the surrounding Putnam County communities. Customers can request one service or combine house washing, concrete cleaning, roof cleaning and exterior windows into a single quote.",
     detail: "Properties differ in siding material, shade, access, concrete condition and the type of buildup present. We review those details before choosing soft washing, pressure washing or another surface-appropriate approach. The scope and price are confirmed before scheduling.",
     nearby: "Service availability also includes Hurricane, Scott Depot, Winfield, Milton and nearby communities."
   },
@@ -279,7 +279,7 @@ const locations = [
 ];
 
 for (const service of services) {
-  service.title = service.slug === 'deck-cleaning' ? 'Deck Cleaning Teays Valley & Charleston WV | Blue Ridge' : service.slug === 'pressure-washing' ? 'Power & Pressure Washing Teays Valley WV | Blue Ridge' : service.name + ' Teays Valley WV | Blue Ridge';
+  service.title = service.slug === 'deck-cleaning' ? 'Deck Cleaning Hurricane & Charleston WV | Blue Ridge' : service.slug === 'pressure-washing' ? 'Power & Pressure Washing Hurricane WV | Blue Ridge' : service.name + ' Hurricane WV | Blue Ridge';
   if (service.slug === 'house-washing') service.faqs.push(['Does house washing include indoor cleaning?', 'House washing here means exterior siding and the exterior areas listed in your quote. Interior rooms and housekeeping are not part of this service.']);
   if (service.slug === 'roof-cleaning') service.faqs.push(['Will roof cleaning fix a roof leak?', 'Roof cleaning removes surface buildup; it does not repair leaks or damaged roofing. Have a roofer assess and repair damaged areas before a cleaning appointment.']);
 }
@@ -293,6 +293,7 @@ for (const location of locations) Object.assign(location, locationUpdates[locati
 const optimizedPhotos = {"blue-ridge-gate-cleaning-hero.png":"blue-ridge-gate-cleaning-hero-web.svg","house-soft-wash-before-after.jpg":"house-soft-wash-before-after-web.svg","metal-roof-wash-before-after.png":"metal-roof-wash-before-after-web.svg","west-virginia-service-area.png":"west-virginia-service-area-web.svg"};
 const photoSizes = {"blue-ridge-gate-cleaning-hero-web.svg":{"width":1290,"height":1485},"house-soft-wash-before-after-web.svg":{"width":1556,"height":1011},"metal-roof-wash-before-after-web.svg":{"width":1565,"height":1005},"west-virginia-service-area-web.svg":{"width":1536,"height":1024}};
 const serviceLinks = services.map((service) => `<a class="link-card" href="../../services/${service.slug}/"><strong>${service.name}</strong><span>Service details and quote information</span></a>`).join("");
+locations.sort((a, b) => Number(b.slug === 'hurricane-wv') - Number(a.slug === 'hurricane-wv'));
 const locationLinks = locations.map((location) => `<a class="link-card" href="../../locations/${location.slug}/"><strong>${location.city}</strong><span>${location.county}, West Virginia</span></a>`).join("");
 
 function shell({ title, description, canonical, kicker, h1, lede, image, imageAlt, body, lowerTitle, lowerLinks, schema }) {
@@ -338,7 +339,7 @@ function shell({ title, description, canonical, kicker, h1, lede, image, imageAl
     <section class="seo-content"><div class="container seo-layout"><article class="seo-copy">${body}</article><aside class="seo-panel"><h2>Get a clear quote</h2><p>Send the property address, the surfaces you want cleaned and any helpful photos. We will review the details and confirm the scope before scheduling.</p><a class="button" href="${quoteUrl}" target="_blank" rel="noopener noreferrer">Request pricing <span>→</span></a><a class="phone" href="tel:${phoneHref}">${phoneDisplay}</a></aside></div></section>
     <section class="seo-locations"><div class="container"><p class="overline">Explore more</p><h2>${lowerTitle}</h2><div class="link-grid">${lowerLinks}</div></div></section>
   </main>
-  <footer class="seo-footer"><div class="container footer-grid"><img src="../../blue-ridge-soft-power-washing-logo.svg?v=white" alt="Blue Ridge Soft &amp; Power washing LLC" width="960" height="480"><p>We don’t cut corners.<br>We clean them.</p><div><a href="../../services/pressure-washing/">Pressure washing</a><a href="../../services/house-washing/">House washing</a><a href="../../services/roof-cleaning/">Roof cleaning</a><a href="../../services/concrete-cleaning/">Concrete cleaning</a><a href="../../services/window-cleaning/">Window cleaning</a><a href="../../services/deck-cleaning/">Deck cleaning</a><a href="../../#quote">Free quote</a></div></div><div class="container copyright"><span>© <span id="year"></span> Blue Ridge Soft &amp; Power washing LLC</span><span>Teays Valley, West Virginia</span></div></footer>
+  <footer class="seo-footer"><div class="container footer-grid"><img src="../../blue-ridge-soft-power-washing-logo.svg?v=white" alt="Blue Ridge Soft &amp; Power washing LLC" width="960" height="480"><p>We don’t cut corners.<br>We clean them.</p><div><a href="../../services/pressure-washing/">Pressure washing</a><a href="../../services/house-washing/">House washing</a><a href="../../services/roof-cleaning/">Roof cleaning</a><a href="../../services/concrete-cleaning/">Concrete cleaning</a><a href="../../services/window-cleaning/">Window cleaning</a><a href="../../services/deck-cleaning/">Deck cleaning</a><a href="../../#quote">Free quote</a></div></div><div class="container copyright"><span>© <span id="year"></span> Blue Ridge Soft &amp; Power washing LLC</span><span>Hurricane, West Virginia</span></div></footer>
   <script src="../../script.js"></script>
 </body>
 </html>`;
@@ -373,7 +374,7 @@ for (const location of locations) {
 
 console.log(`Generated ${services.length} service pages and ${locations.length} location pages.`);
 
-const modified = '2026-09-27';
+const modified = '2026-10-02';
 const sitemapUrls = [domain + '/', domain + '/services/', domain + '/before-and-after/', ...services.map(s => domain + '/services/' + s.slug + '/'), ...locations.map(l => domain + '/locations/' + l.slug + '/')];
 await writeFile(new URL('sitemap.xml', root), '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + sitemapUrls.map(url => '  <url><loc>' + url + '</loc><lastmod>' + modified + '</lastmod></url>').join('\n') + '\n</urlset>\n');
 
@@ -388,3 +389,4 @@ const homepageHtml = await readFile(homepageUrl, "utf8");
 if (homepageHtml.includes('id="homepage-styles"')) {
   await writeFile(homepageUrl, homepageHtml.replace(/<style id="homepage-styles">[\s\S]*?<\/style>/, () => '<style id="homepage-styles">\n' + cssParts.join("\n") + "\n</style>"));
 }
+
