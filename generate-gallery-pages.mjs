@@ -12,7 +12,8 @@ const services=[
  ['soft-washing','Soft Washing','Low-pressure cleaning for siding and sensitive exterior materials.'],
  ['window-cleaning','Exterior Window Cleaning','One-time window washing and quarterly, twice-yearly or annual cleaning plans.'],
  ['house-washing','House Washing','Exterior siding, trim and accessible soffits, with a method chosen for the material.'],
- ['concrete-cleaning','Driveway & Concrete Cleaning','Cleaning for driveways, sidewalks, concrete pads and patios.'],
+ ['driveway-cleaning','Driveway Cleaning','Cleaning for concrete driveways, entrances and turning areas.'],
+ ['concrete-cleaning','Concrete Cleaning','Cleaning for sidewalks, walkways, concrete pads and patios.'],
  ['roof-cleaning','Roof Cleaning','Roof washing planned around the roofing material, condition and safe access.'],
  ['deck-cleaning','Deck Cleaning','Wood and composite deck cleaning with a surface-specific approach.'],
  ['commercial-exterior-cleaning','Commercial Exterior Cleaning','Exterior cleaning for business properties, building surfaces and concrete areas.']
