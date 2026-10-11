@@ -45,7 +45,7 @@ for (const file of files.filter(file => file.endsWith('.html'))) {
   }
   for (const match of html.matchAll(/<(?:a|link|script|img)\b[^>]*(?:href|src)="([^"]+)"/g)) {
     const url = match[1].replaceAll('&amp;', '&');
-    if (/^(?:https?:|mailto:|tel:|data:|#)/.test(url)) continue;
+    if (/^(?:https?:|mailto:|tel:|sms:|data:|#)/.test(url)) continue;
     const local = url.split(/[?#]/)[0];
     const target = path.resolve(path.dirname(file), local);
     try { const info = await stat(target); if (info.isDirectory()) await stat(path.join(target, 'index.html')); references++; }
@@ -66,3 +66,4 @@ for (const file of files.filter(file => file.endsWith('.css'))) {
 }
 console.log(JSON.stringify({ indexablePages: pages.length, validJsonLdBlocks: schemas, localReferencesChecked: references, sitemapUrls: sitemapUrls.length, errors, warnings, pages }, null, 2));
 if (errors.length) process.exitCode = 1;
+

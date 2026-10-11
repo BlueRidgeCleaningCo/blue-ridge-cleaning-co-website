@@ -6,7 +6,7 @@ Static website hosted by GitHub Pages from the root of the main branch at https:
 
 Edit index.html for the homepage. Edit generate-seo-pages.mjs for service and location content, then run node generate-seo-pages.mjs and commit the generated pages. No build step is required for deployment.
 
-The quote links open the existing Microsoft Forms quote form. Contact details, the Google review link and the website domain are maintained independently from the business display name.
+Quote links open an email to blueridgepwllc@gmail.com, and the contact section also offers phone and text links. The website no longer uses an online quote form. Contact details, the Google review link and the website domain are maintained independently from the business display name.
 
 ## Branding
 
@@ -14,7 +14,7 @@ The business name is Blue Ridge Soft & Power Washing LLC. The header and footer 
 
 ## Search content
 
-The homepage, nine service pages and thirteen West Virginia location pages contain service-specific titles, descriptions, canonical URLs and structured data. The existing page URLs are preserved. Key service terms include soft washing, power washing, pressure washing, house washing, roof cleaning, concrete cleaning, driveway cleaning and exterior window cleaning.
+The homepage, twelve service pages and thirteen West Virginia location pages contain service-specific titles, descriptions, canonical URLs and structured data. The existing page URLs are preserved. Key service terms include soft washing, power washing, pressure washing, house washing, roof cleaning, concrete cleaning, driveway cleaning and exterior window cleaning.
 
 ## SEO checks and publishing
 

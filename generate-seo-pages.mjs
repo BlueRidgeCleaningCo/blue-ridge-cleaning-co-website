@@ -5,7 +5,7 @@ const recentJobs = JSON.parse(await readFile(new URL("recent-jobs.json", root), 
 const businessName = "Blue Ridge Soft & Power Washing LLC";
 const escapeHtml = (value) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 const domain = "https://blueridgespw.com";
-const quoteUrl = "https://forms.cloud.microsoft/r/fVtAtEP2u7";
+const quoteUrl = "mailto:blueridgepwllc@gmail.com?subject=Free%20cleaning%20quote";
 const phoneDisplay = "(304) 549-2098";
 const phoneHref = "+13045492098";
 
@@ -182,37 +182,182 @@ const services = [
 services.push({
   "slug": "deck-cleaning",
   "name": "Deck Cleaning",
-  "title": "Deck Cleaning in Hurricane & Charleston WV | Blue Ridge",
-  "description": "Wood and composite deck cleaning in Hurricane, Teays Valley, Charleston and nearby WV communities. Request a surface-specific quote from Blue Ridge.",
-  "kicker": "Wood and composite deck cleaning in West Virginia",
-  "h1": "Deck cleaning <em>for wood and composite.</em>",
+  "title": "Deck Cleaning Hurricane WV | Blue Ridge",
+  "description": "Wood, composite and PVC deck cleaning in Hurricane, WV. Care tailored to deck boards, railings, steps and existing finishes. Request a free quote.",
+  "kicker": "Wood, composite and PVC deck cleaning",
+  "h1": "Deck cleaning <em>matched to your material.</em>",
   "image": "blue-ridge-gate-cleaning-hero.png",
-  "imageAlt": "Blue Ridge team cleaning an outdoor gate",
-  "intro": "Blue Ridge Soft & Power Washing LLC cleans wood and composite decks in Hurricane, Teays Valley, Charleston and nearby West Virginia communities. Tell us the deck material, approximate size and condition so we can plan a cleaning method suited to the boards, railings and existing finish.",
+  "imageAlt": "Blue Ridge exterior cleaning work on an outdoor gate",
+  "intro": "Blue Ridge Soft & Power Washing LLC provides deck cleaning in Hurricane and nearby West Virginia communities. Wood, composite and PVC decks need different care. Tell us your deck material, approximate size and any stain, paint or coating so we can confirm the right cleaning plan for the boards, railings and steps.",
   "bestFor": [
-    "Wood deck boards and accessible railings",
-    "Composite decking with a material-appropriate cleaning method",
-    "Steps and attached deck sections included in your quote",
-    "Dirt and organic buildup on outdoor deck surfaces"
+    "Pressure-treated wood deck boards and railings",
+    "Cedar, redwood and hardwood decks after material evaluation",
+    "Composite decking, including capped composite boards",
+    "PVC or vinyl decking after product identification",
+    "Painted or stained decks with a suitable cleaning approach",
+    "Accessible steps, landings and railings included in your quote"
   ],
-  "method": "Wood and composite decking need different preparation and cleaning methods. We check the material, coating, condition and visible buildup before selecting a cleaning solution and pressure. Composite manufacturer guidance and the condition of wood boards help determine the approach. Aggressive pressure is not a default treatment for a deck.",
-  "results": "Cleaning can remove dirt and organic buildup, but it does not repair loose boards, rot, damaged coatings or permanent fading. Staining, sealing, coating removal and structural repairs are separate from a standard cleaning quote. Identify any concerns when you send your photos.",
+  "method": "We review the deck material, condition, coating and visible buildup before selecting cleaning products, tools and rinsing pressure. Manufactured decking is checked against the care instructions for the specific product. A concrete-cleaning approach is not automatically suitable for a deck.",
+  "results": "Cleaning removes common dirt and organic buildup. It does not repair rot, loose boards, cracks, scratches, sun fading or failing coatings. Staining, sealing, stripping and structural repairs are separate from a standard deck-cleaning quote.",
+  "sections": [
+    {
+      "heading": "Pressure-treated wood decks",
+      "html": "<p>Pressure-treated wood is still wood and needs attention to its grain, age and existing finish. We assess the boards and select controlled cleaning and rinsing for the surface. Loose boards, splintering or deteriorated sections should be identified before cleaning.</p>"
+    },
+    {
+      "heading": "Cedar, redwood and hardwood decks",
+      "html": "<p>Different wood species and finishes can respond differently to cleaning. Share the wood type if you know it, along with any stain, oil or sealer previously applied. The condition of the boards and coating guides the cleaning plan.</p>"
+    },
+    {
+      "heading": "Composite decks",
+      "html": "<p>Composite decking, including capped products, needs care matched to its brand and product line. Cleaning products, brushes and pressure limits vary, so we review the applicable manufacturer instructions instead of using one method for every composite deck. See the <a href=\"https://www.trex.com/customer-support/trex-owners/care-and-cleaning/\" target=\"_blank\" rel=\"noopener noreferrer\">Trex care guide</a> for an example of product-specific guidance.</p>"
+    },
+    {
+      "heading": "PVC and vinyl decks",
+      "html": "<p>PVC decking and vinyl deck surfaces require their own product-compatible cleaning approach. Let us know the manufacturer and whether the surface is deck boards or a vinyl covering so we can confirm suitability before quoting. The <a href=\"https://www.timbertech.com/resources/care-cleaning/\" target=\"_blank\" rel=\"noopener noreferrer\">TimberTech care guide</a> provides separate guidance for its decking collections.</p>"
+    },
+    {
+      "heading": "Painted and stained decks",
+      "html": "<p>An existing coating matters as much as the deck material. We check for peeling, flaking and worn areas before cleaning. Routine washing is not a paint-stripping or refinishing service, and damaged finishes may remain visible afterward.</p>"
+    },
+    {
+      "heading": "Other wood and fence services",
+      "html": "<p>For other outdoor wood structures, visit <a href=\"../../services/wood-cleaning/\">wood cleaning</a>. Fence panels and posts have dedicated pages for <a href=\"../../services/wood-fence-cleaning/\">wood fences</a> and <a href=\"../../services/plastic-fence-cleaning/\">plastic or vinyl fences</a>.</p>"
+    }
+  ],
   "faqs": [
     [
-      "Do you clean both wood and composite decks?",
-      "Yes. We clean both wood and composite decks and select the method after reviewing the material and condition."
+      "Do you clean wood, composite and PVC decks?",
+      "We accept requests for these deck types and confirm the cleaning method after identifying the material, finish, condition and any applicable product care requirements."
     ],
     [
-      "Can I request deck pressure washing in Charleston, WV?",
-      "Yes. We accept deck-cleaning requests in Charleston and nearby service areas. The pressure and cleaning method are selected for your deck, rather than using the same approach as a concrete driveway."
+      "Should every deck be pressure washed?",
+      "No. The appropriate cleaning products, tools and rinsing pressure depend on the material and finish. We do not use a driveway-cleaning approach on every deck."
     ],
     [
-      "What should I include with a deck-cleaning quote request?",
-      "Include your address, photos, approximate deck size, whether the boards are wood or composite, and any known stain, paint or coating. Tell us if the steps or railings should be included."
+      "Are railings and steps included?",
+      "They can be included when identified in your quote. Send photos of the boards, railings, steps and any attached sections you want cleaned."
     ],
     [
-      "Can deck cleaning be combined with house washing?",
-      "Yes. Include both services in your request so the surfaces and price can be confirmed together."
+      "What information helps with a deck-cleaning quote?",
+      "Send your address, photos, approximate size, deck material or brand if known, and details of any paint, stain or sealer."
+    ]
+  ]
+},
+{
+  "title": "",
+  "image": "media/wood-fence-cleaning-charleston-wv-poster.jpg",
+  "imageAlt": "Wood fence cleaning from a completed Blue Ridge project in Charleston, West Virginia",
+  "slug": "wood-cleaning",
+  "name": "Wood Cleaning",
+  "description": "Exterior wood cleaning in Hurricane, WV, for gates, railings and outdoor wood structures. Cleaning matched to the wood and finish. Request a free quote.",
+  "kicker": "Exterior wood cleaning in Hurricane, WV",
+  "h1": "Wood cleaning <em>with care for the grain.</em>",
+  "intro": "Blue Ridge Soft & Power Washing LLC cleans exterior wood gates, railings and selected outdoor wood structures in Hurricane and nearby West Virginia communities. We assess the wood, finish and condition before choosing a cleaning approach. Decks and fences have their own dedicated service pages so you can request the right scope.",
+  "bestFor": [
+    "Exterior wood gates and accessible railings",
+    "Selected pergolas and outdoor wood structures after evaluation",
+    "Natural, stained or painted wood with a suitable cleaning method",
+    "Dirt and organic buildup on exterior wood"
+  ],
+  "method": "Tell us the wood type, any existing stain, paint or sealer, and which surfaces you want cleaned. We review visible wear and buildup, then choose a cleaning solution and controlled rinsing appropriate to the material. Questionable finishes may need a small test area before the full cleaning.",
+  "results": "Cleaning can remove dirt and organic buildup, but weathering, rot, cracks, splinters and failing finishes may remain. Standard cleaning does not include stripping, sanding, staining, sealing or structural repairs.",
+  "sections": [
+    {
+      "heading": "Choose the right wood-cleaning service",
+      "html": "<p>For deck boards, steps and deck railings, visit <a href=\"../../services/deck-cleaning/\">deck cleaning</a>. For fence panels, pickets and posts, visit <a href=\"../../services/wood-fence-cleaning/\">wood fence cleaning</a>. This page covers other exterior wood features, including gates, railings and selected outdoor structures.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Can you clean stained or painted wood?",
+      "We assess the finish and condition first. Loose paint, peeling stain and deteriorated coatings can affect the cleaning plan and expected result."
+    ],
+    [
+      "Does wood cleaning include staining or sealing?",
+      "No. Standard wood cleaning covers the surfaces listed in your quote. Staining, sealing, stripping and repairs are separate from cleaning."
+    ],
+    [
+      "Can I combine wood cleaning with another service?",
+      "Yes. Send photos of each area and identify any deck, fence or other wood feature you want included so the scope can be confirmed."
+    ]
+  ]
+},
+{
+  "title": "",
+  "image": "media/wood-fence-cleaning-charleston-wv-poster.jpg",
+  "imageAlt": "Wood fence cleaning from a completed Blue Ridge project in Charleston, West Virginia",
+  "slug": "wood-fence-cleaning",
+  "name": "Wood Fence Cleaning",
+  "description": "Wood fence cleaning in Hurricane, WV. Remove dirt and organic buildup from fence panels, pickets and posts with a method suited to the wood. Free quotes.",
+  "kicker": "Wood fence cleaning in Hurricane, WV",
+  "h1": "Wood fence cleaning <em>for a refreshed boundary.</em>",
+  "intro": "Blue Ridge Soft & Power Washing LLC provides wood fence cleaning in Hurricane and nearby West Virginia communities. We clean dirt and organic buildup from accessible fence panels, pickets and posts, choosing the approach for the wood and any existing finish. Include the fence length and the sides you want cleaned when requesting a quote.",
+  "bestFor": [
+    "Wood privacy fence panels",
+    "Wood picket fences and accessible posts",
+    "Attached wood gates included in the quote",
+    "One or both fence sides, subject to access and permission"
+  ],
+  "method": "We check the wood condition, existing stain or sealer, nearby plants and access to each side. Cleaning solution and rinsing pressure are selected for the fence rather than treating it like a concrete surface. We discuss loose boards, deteriorated wood and damaged finishes before work begins.",
+  "results": "Fence cleaning can lift dirt and organic buildup and improve the appearance of the wood. It does not repair rot, warped boards, loose fasteners or weathered finishes. Stain removal, staining and sealing are not part of a standard cleaning quote.",
+  "sections": [
+    {
+      "heading": "Wood fences need their own cleaning approach",
+      "html": "<p>Natural wood, stained wood and painted fence boards can respond differently to cleaning. Tell us about any coating and visible wear. If your fence is plastic or vinyl, choose our <a href=\"../../services/plastic-fence-cleaning/\">plastic and vinyl fence cleaning</a> service instead.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Do you clean both sides of a wood fence?",
+      "Both sides can be quoted when access and any necessary permission are available. Tell us which sides and gates you want included."
+    ],
+    [
+      "Will cleaning make an old fence look new?",
+      "Cleaning can improve its appearance, but it cannot reverse rot, cracking, weathering or permanent discoloration. We discuss realistic results before scheduling."
+    ],
+    [
+      "Can you clean a stained wood fence?",
+      "We evaluate the finish first and choose a method for its condition. Cleaning is separate from removing stain or applying a new coating."
+    ]
+  ]
+},
+{
+  "slug": "plastic-fence-cleaning",
+  "name": "Plastic & Vinyl Fence Cleaning",
+  "title": "",
+  "description": "Plastic and vinyl fence cleaning in Hurricane, WV. Gentle cleaning for dirt, algae and grime on fence panels, posts and gates. Request a free quote.",
+  "kicker": "Plastic and vinyl fence cleaning in Hurricane, WV",
+  "h1": "Plastic fence cleaning <em>for a brighter finish.</em>",
+  "image": "vinyl-fence-before-after.jpg",
+  "imageAlt": "Before and after cleaning a white vinyl fence, showing organic buildup removed",
+  "intro": "Blue Ridge Soft & Power Washing LLC cleans plastic and vinyl fences in Hurricane and nearby West Virginia communities. We remove common dirt, algae and surface grime from accessible panels, posts and gates, using a cleaning method suited to the fence material and condition.",
+  "bestFor": [
+    "White and colored vinyl fence panels",
+    "Plastic fence posts and accessible rails",
+    "Vinyl privacy and picket fences",
+    "Plastic or vinyl gates included in your quote"
+  ],
+  "method": "We inspect the fence for cracks, loose parts, weathering and existing stains before cleaning. A material-appropriate cleaning solution and gentle rinsing help release dirt and organic buildup. Product care guidance, nearby plants and access to both sides are considered in the cleaning plan.",
+  "results": "Cleaning can refresh the surface and remove common grime. Sun fading, oxidation, scratches, rust marks and permanent discoloration may remain or require separate evaluation. Washing does not repair cracked panels or damaged fittings.",
+  "sections": [
+    {
+      "heading": "Plastic and vinyl are different from wood",
+      "html": "<p>Vinyl fencing is commonly made from PVC plastic. It needs a cleaning approach suited to its surface and condition. Our <a href=\"../../services/wood-fence-cleaning/\">wood fence cleaning</a> service separately covers natural, stained and painted wood fences.</p>"
+    }
+  ],
+  "faqs": [
+    [
+      "Do you clean white vinyl fences?",
+      "Yes. We evaluate white vinyl fence panels, posts and gates for dirt and organic buildup and confirm the included areas in your quote."
+    ],
+    [
+      "Can you remove green algae and dark buildup?",
+      "Our cleaning targets common organic buildup and surface grime. Permanent staining, oxidation and weathering may not be removable with standard cleaning."
+    ],
+    [
+      "Can both sides and the gates be included?",
+      "Yes, when access and permission allow. Include the approximate fence length, the sides to be cleaned and the number of gates when requesting a quote."
     ]
   ]
 });
@@ -312,7 +457,7 @@ const locations = [
 ];
 
 for (const service of services) {
-  service.title = service.slug === 'deck-cleaning' ? 'Deck Cleaning Hurricane & Charleston WV | Blue Ridge' : service.slug === 'pressure-washing' ? 'Power & Pressure Washing Hurricane WV | Blue Ridge' : service.name + ' Hurricane WV | Blue Ridge';
+  service.title = service.slug === 'deck-cleaning' ? 'Deck Cleaning Hurricane WV | Blue Ridge' : service.slug === 'pressure-washing' ? 'Power & Pressure Washing Hurricane WV | Blue Ridge' : service.name + ' Hurricane WV | Blue Ridge';
   if (service.slug === 'house-washing') service.faqs.push(['Does house washing include indoor cleaning?', 'House washing here means exterior siding and the exterior areas listed in your quote. Interior rooms and housekeeping are not part of this service.']);
   if (service.slug === 'roof-cleaning') service.faqs.push(['Will roof cleaning fix a roof leak?', 'Roof cleaning removes surface buildup; it does not repair leaks or damaged roofing. Have a roofer assess and repair damaged areas before a cleaning appointment.']);
 }
@@ -324,7 +469,7 @@ const locationUpdates = {
 };
 for (const location of locations) Object.assign(location, locationUpdates[location.slug] || {});
 const optimizedPhotos = {"blue-ridge-gate-cleaning-hero.png":"blue-ridge-gate-cleaning-hero-web.svg","house-soft-wash-before-after.jpg":"house-soft-wash-before-after-web.svg","metal-roof-wash-before-after.png":"metal-roof-wash-before-after-web.svg","west-virginia-service-area.png":"west-virginia-service-area-web.svg"};
-const photoSizes = {"driveway-cleaning-before-after.jpg":{"width":822,"height":514},"blue-ridge-gate-cleaning-hero-web.svg":{"width":1290,"height":1485},"house-soft-wash-before-after-web.svg":{"width":1556,"height":1011},"metal-roof-wash-before-after-web.svg":{"width":1565,"height":1005},"west-virginia-service-area-web.svg":{"width":1536,"height":1024}};
+const photoSizes = {"vinyl-fence-before-after.jpg":{"width":1290,"height":1613},"media/wood-fence-cleaning-charleston-wv-poster.jpg":{"width":480,"height":470},"driveway-cleaning-before-after.jpg":{"width":822,"height":514},"blue-ridge-gate-cleaning-hero-web.svg":{"width":1290,"height":1485},"house-soft-wash-before-after-web.svg":{"width":1556,"height":1011},"metal-roof-wash-before-after-web.svg":{"width":1565,"height":1005},"west-virginia-service-area-web.svg":{"width":1536,"height":1024}};
 const serviceLinks = services.map((service) => `<a class="link-card" href="../../services/${service.slug}/"><strong>${service.name}</strong><span>Service details and quote information</span></a>`).join("");
 locations.sort((a, b) => Number(b.slug === 'hurricane-wv') - Number(a.slug === 'hurricane-wv'));
 const locationLinks = locations.map((location) => `<a class="link-card" href="../../locations/${location.slug}/"><strong>${location.city}</strong><span>${location.county}, West Virginia</span></a>`).join("");
@@ -332,7 +477,7 @@ const locationLinks = locations.map((location) => `<a class="link-card" href="..
 function shell({ title, description, canonical, kicker, h1, lede, image, imageAlt, body, lowerTitle, lowerLinks, schema }) {
   const relatedJobs = recentJobs.filter(job => canonical.endsWith('/locations/' + job.location + '/') || canonical.endsWith('/services/' + job.service + '/'));
   let projectLinks = relatedJobs.map(job => '<li><a href="../../before-and-after/#' + job.id + '">' + job.title + ' in ' + job.city + ', WV — before and after</a></li>').join('');
-  if (canonical.endsWith('/locations/charleston-wv/')) projectLinks += '<li><a href="../../before-and-after/#wood-fence-cleaning-charleston-wv">Watch wood fence cleaning in Charleston, WV</a></li>';
+  if (canonical.endsWith('/locations/charleston-wv/') || canonical.endsWith('/services/wood-fence-cleaning/')) projectLinks += '<li><a href="../../before-and-after/#wood-fence-cleaning-charleston-wv">Watch wood fence cleaning in Charleston, WV</a></li>';
   if (projectLinks) body = '<h2>See a completed local project</h2><ul>' + projectLinks + '</ul>' + body;
   const displayImage = optimizedPhotos[image] || image;
   const imageSize = photoSizes[displayImage] || { width: 900, height: 650 };
@@ -356,7 +501,7 @@ function shell({ title, description, canonical, kicker, h1, lede, image, imageAl
   
   
   
-  <link rel="stylesheet" href="../../site.css?v=20260928">
+  <link rel="stylesheet" href="../../site.css?v=20261011">
   <style>.seo-header{position:fixed}</style>
   <script type="application/ld+json">${JSON.stringify(schema)}</script>
 </head>
@@ -365,14 +510,14 @@ function shell({ title, description, canonical, kicker, h1, lede, image, imageAl
   <header class="header seo-header" id="top"><div class="container nav-row">
     <a class="logo" href="../../" aria-label="Blue Ridge Soft &amp; Power Washing LLC home"><img src="../../blue-ridge-soft-power-washing-logo.svg?v=white" alt="Blue Ridge Soft &amp; Power Washing LLC" width="960" height="480"></a>
     <button class="menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span><b class="sr-only">Open menu</b></button>
-    <nav id="nav" aria-label="Primary navigation"><a href="../../services/">Services</a><a href="../../before-and-after/">Before &amp; After</a><a href="../../#areas">Service area</a><a class="nav-cta" href="${quoteUrl}" target="_blank" rel="noopener noreferrer">Free quote</a></nav>
+    <nav id="nav" aria-label="Primary navigation"><a href="../../services/">Services</a><a href="../../before-and-after/">Before &amp; After</a><a href="../../#areas">Service area</a><a class="nav-cta" href="${quoteUrl}">Free quote</a></nav>
   </div></header>
   <main class="seo-main" id="main">
-    <section class="seo-hero"><div class="container seo-hero-grid"><div><div class="breadcrumbs"><a href="../../">Home</a><span>/</span><span>${kicker}</span></div><p class="overline">${kicker}</p><h1>${h1}</h1><p>${escapeHtml(lede)}</p><div class="actions"><a class="button" href="${quoteUrl}" target="_blank" rel="noopener noreferrer">Request a free quote <span>→</span></a><a class="call" href="tel:${phoneHref}"><small>Call or text</small>${phoneDisplay}</a></div></div><figure><img src="../../${displayImage}" alt="${escapeHtml(imageAlt)}" width="${imageSize.width}" height="${imageSize.height}" decoding="async"></figure></div></section>
-    <section class="seo-content"><div class="container seo-layout"><article class="seo-copy">${body}</article><aside class="seo-panel"><h2>Get a clear quote</h2><p>Send the property address, the surfaces you want cleaned and any helpful photos. We will review the details and confirm the scope before scheduling.</p><a class="button" href="${quoteUrl}" target="_blank" rel="noopener noreferrer">Request pricing <span>→</span></a><a class="phone" href="tel:${phoneHref}">${phoneDisplay}</a></aside></div></section>
+    <section class="seo-hero"><div class="container seo-hero-grid"><div><div class="breadcrumbs"><a href="../../">Home</a><span>/</span><span>${kicker}</span></div><p class="overline">${kicker}</p><h1>${h1}</h1><p>${escapeHtml(lede)}</p><div class="actions"><a class="button" href="${quoteUrl}">Request a free quote <span>→</span></a><a class="call" href="tel:${phoneHref}"><small>Call or text</small>${phoneDisplay}</a></div></div><figure><img style="${displayImage === 'vinyl-fence-before-after.jpg' ? 'height:auto' : ''}" src="../../${displayImage}" alt="${escapeHtml(imageAlt)}" width="${imageSize.width}" height="${imageSize.height}" decoding="async"></figure></div></section>
+    <section class="seo-content"><div class="container seo-layout"><article class="seo-copy">${body}</article><aside class="seo-panel"><h2>Get a clear quote</h2><p>Send the property address, the surfaces you want cleaned and any helpful photos. We will review the details and confirm the scope before scheduling.</p><a class="button" href="${quoteUrl}">Request pricing <span>→</span></a><a class="phone" href="tel:${phoneHref}">${phoneDisplay}</a></aside></div></section>
     <section class="seo-locations"><div class="container"><p class="overline">Explore more</p><h2>${lowerTitle}</h2><div class="link-grid">${lowerLinks}</div></div></section>
   </main>
-  <footer class="seo-footer"><div class="container footer-grid"><img src="../../blue-ridge-soft-power-washing-logo.svg?v=white" alt="Blue Ridge Soft &amp; Power Washing LLC" width="960" height="480"><p>We don’t cut corners.<br>We clean them.</p><div><a href="../../services/pressure-washing/">Pressure washing</a><a href="../../services/house-washing/">House washing</a><a href="../../services/roof-cleaning/">Roof cleaning</a><a href="../../services/concrete-cleaning/">Concrete cleaning</a><a href="../../services/driveway-cleaning/">Driveway cleaning</a><a href="../../services/window-cleaning/">Window cleaning</a><a href="../../services/deck-cleaning/">Deck cleaning</a><a href="../../#quote">Free quote</a></div></div><div class="container copyright"><span>© <span id="year"></span> Blue Ridge Soft &amp; Power Washing LLC</span><span>Hurricane, West Virginia</span></div></footer>
+  <footer class="seo-footer"><div class="container footer-grid"><img src="../../blue-ridge-soft-power-washing-logo.svg?v=white" alt="Blue Ridge Soft &amp; Power Washing LLC" width="960" height="480"><p>We don’t cut corners.<br>We clean them.</p><div><a href="../../services/pressure-washing/">Pressure washing</a><a href="../../services/house-washing/">House washing</a><a href="../../services/roof-cleaning/">Roof cleaning</a><a href="../../services/concrete-cleaning/">Concrete cleaning</a><a href="../../services/driveway-cleaning/">Driveway cleaning</a><a href="../../services/window-cleaning/">Window cleaning</a><a href="../../services/deck-cleaning/">Deck cleaning</a><a href="../../services/wood-cleaning/">Wood cleaning</a><a href="../../services/wood-fence-cleaning/">Wood fence cleaning</a><a href="../../services/plastic-fence-cleaning/">Plastic &amp; vinyl fence cleaning</a><a href="../../#quote">Free quote</a></div></div><div class="container copyright"><span>© <span id="year"></span> Blue Ridge Soft &amp; Power Washing LLC</span><span>Hurricane, West Virginia</span></div></footer>
   <script src="../../script.js"></script>
 </body>
 </html>`;
@@ -380,7 +525,7 @@ function shell({ title, description, canonical, kicker, h1, lede, image, imageAl
 
 for (const service of services) {
   const canonical = `${domain}/services/${service.slug}/`;
-  const body = `<h2>Planning your ${service.name.toLowerCase()} service</h2><p>Start with the property address, photos and the surfaces you would like cleaned. Your quote identifies the included areas and the cleaning approach before an appointment is scheduled.</p><h3>Surfaces and projects we evaluate</h3><ul>${service.bestFor.map((item) => `<li>${item}</li>`).join("")}</ul><h3>How the service is planned</h3><p>${service.method}</p><h3>Combine services in one quote</h3><p>Ask about <a href="../../services/house-washing/">house washing</a>, <a href="../../services/driveway-cleaning/">driveway cleaning</a> and <a href="../../services/deck-cleaning/">deck cleaning</a> when planning work at the same property.</p><p><a href="../../before-and-after/">See before &amp; after photos from our exterior cleaning jobs →</a></p><h3>What to expect from cleaning</h3><p>${service.results}</p><div class="faq"><p class="overline">Common questions</p><h2>${service.name} questions</h2>${service.faqs.map(([question, answer]) => `<details><summary>${question}</summary><p>${answer}</p></details>`).join("")}</div>`;
+  const body = `${(service.sections || []).map(section => `<h2>${section.heading}</h2>${section.html}`).join("")}<h2>Planning your ${service.name.toLowerCase()} service</h2><p>Start with the property address, photos and the surfaces you would like cleaned. Your quote identifies the included areas and the cleaning approach before an appointment is scheduled.</p><h3>Surfaces and projects we evaluate</h3><ul>${service.bestFor.map((item) => `<li>${item}</li>`).join("")}</ul><h3>How the service is planned</h3><p>${service.method}</p><h3>Combine services in one quote</h3><p>Ask about <a href="../../services/house-washing/">house washing</a>, <a href="../../services/driveway-cleaning/">driveway cleaning</a> and <a href="../../services/deck-cleaning/">deck cleaning</a> when planning work at the same property.</p><p><a href="../../before-and-after/">See before &amp; after photos from our exterior cleaning jobs →</a></p><h3>What to expect from cleaning</h3><p>${service.results}</p><div class="faq"><p class="overline">Common questions</p><h2>${service.name} questions</h2>${service.faqs.map(([question, answer]) => `<details><summary>${question}</summary><p>${answer}</p></details>`).join("")}</div>`;
   const schema = { "@context": "https://schema.org", "@graph": [
     { "@type": "Service", "@id": `${canonical}#service`, name: service.name, url: canonical, description: service.description, provider: { "@type": "ProfessionalService", "@id": `${domain}/#business`, name: businessName }, areaServed: locations.map(({ city }) => ({ "@type": "City", name: `${city}, West Virginia` })) },
     { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: `${domain}/` }, { "@type": "ListItem", position: 2, name: service.name, item: canonical }] }
@@ -394,7 +539,7 @@ for (const service of services) {
 for (const location of locations) {
   const canonical = `${domain}/locations/${location.slug}/`;
   const title = `Pressure Washing ${location.city} WV | Blue Ridge`;
-  const body = `<h2>Plan your exterior cleaning in ${location.city}</h2><p>Choose the surfaces you want cleaned and request a quote for the work at your property. We confirm the material, access and included areas before scheduling.</p><h3>A cleaning method selected for the surface</h3><p>${location.detail}</p><h3>Services available in ${location.city}</h3><ul><li><a href="../../services/pressure-washing/">Pressure washing</a> for durable concrete and selected exterior surfaces</li><li><a href="../../services/house-washing/">House washing</a> and <a href="../../services/soft-washing/">low-pressure soft washing</a></li><li><a href="../../services/driveway-cleaning/">Driveway cleaning</a></li><li><a href="../../services/concrete-cleaning/">Sidewalk, patio and concrete cleaning</a></li><li><a href="../../services/deck-cleaning/">Wood and composite deck cleaning</a></li><li><a href="../../services/roof-cleaning/">Roof cleaning</a> after a material and access evaluation</li><li><a href="../../services/window-cleaning/">Exterior window cleaning</a> and recurring plans</li><li><a href="../../services/commercial-exterior-cleaning/">Commercial exterior and concrete cleaning</a></li></ul><h3>Nearby service availability</h3><p>${location.nearby}</p><div class="faq"><p class="overline">Local quote questions</p><h2>Planning your ${location.city} cleaning</h2><details><summary>How do I request a quote?</summary><p>Send the property address, the surfaces you want cleaned and any helpful photos through the quote form. We will confirm whether an on-site look is needed.</p></details><details><summary>Can I combine multiple services?</summary><p>Yes. House washing, concrete cleaning, exterior windows and other requested areas can be reviewed together and listed in one quote.</p></details><details><summary>Do you serve areas near ${location.city}?</summary><p>${location.nearby}</p></details></div>`;
+  const body = `<h2>Plan your exterior cleaning in ${location.city}</h2><p>Choose the surfaces you want cleaned and request a quote for the work at your property. We confirm the material, access and included areas before scheduling.</p><h3>A cleaning method selected for the surface</h3><p>${location.detail}</p><h3>Services available in ${location.city}</h3><ul><li><a href="../../services/pressure-washing/">Pressure washing</a> for durable concrete and selected exterior surfaces</li><li><a href="../../services/house-washing/">House washing</a> and <a href="../../services/soft-washing/">low-pressure soft washing</a></li><li><a href="../../services/driveway-cleaning/">Driveway cleaning</a></li><li><a href="../../services/concrete-cleaning/">Sidewalk, patio and concrete cleaning</a></li><li><a href="../../services/deck-cleaning/">Wood, composite and PVC deck cleaning</a></li><li><a href="../../services/wood-cleaning/">Exterior wood cleaning</a></li><li><a href="../../services/wood-fence-cleaning/">Wood fence cleaning</a></li><li><a href="../../services/plastic-fence-cleaning/">Plastic and vinyl fence cleaning</a></li><li><a href="../../services/roof-cleaning/">Roof cleaning</a> after a material and access evaluation</li><li><a href="../../services/window-cleaning/">Exterior window cleaning</a> and recurring plans</li><li><a href="../../services/commercial-exterior-cleaning/">Commercial exterior and concrete cleaning</a></li></ul><h3>Nearby service availability</h3><p>${location.nearby}</p><div class="faq"><p class="overline">Local quote questions</p><h2>Planning your ${location.city} cleaning</h2><details><summary>How do I request a quote?</summary><p>Send the property address, the surfaces you want cleaned and any helpful photos by email, phone or text. We will confirm whether an on-site look is needed.</p></details><details><summary>Can I combine multiple services?</summary><p>Yes. House washing, concrete cleaning, exterior windows and other requested areas can be reviewed together and listed in one quote.</p></details><details><summary>Do you serve areas near ${location.city}?</summary><p>${location.nearby}</p></details></div>`;
   const schema = { "@context": "https://schema.org", "@graph": [
     { "@type": "Service", "@id": `${canonical}#service-area`, name: `Exterior Cleaning in ${location.city}, West Virginia`, url: canonical, description: location.description, provider: { "@type": "ProfessionalService", "@id": `${domain}/#business`, name: businessName }, areaServed: { "@type": "City", name: `${location.city}, West Virginia`, containedInPlace: { "@type": "AdministrativeArea", name: `${location.county}, West Virginia` } }, hasOfferCatalog: { "@type": "OfferCatalog", name: `Exterior cleaning services in ${location.city}`, itemListElement: services.map((service) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: service.name, url: `${domain}/services/${service.slug}/` } })) } },
     { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: `${domain}/` }, { "@type": "ListItem", position: 2, name: `${location.city}, WV`, item: canonical }] }
@@ -407,11 +552,11 @@ for (const location of locations) {
 
 console.log(`Generated ${services.length} service pages and ${locations.length} location pages.`);
 
-const modified = '2026-10-02';
+const modified = '2026-10-11';
 const sitemapUrls = [domain + '/', domain + '/services/', domain + '/before-and-after/', ...services.map(s => domain + '/services/' + s.slug + '/'), ...locations.map(l => domain + '/locations/' + l.slug + '/')];
 await writeFile(new URL('sitemap.xml', root), '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + sitemapUrls.map(url => '  <url><loc>' + url + '</loc><lastmod>' + modified + '</lastmod></url>').join('\n') + '\n</urlset>\n');
 
-const stylesheets = ["styles.css","brand-logo.css","window-plans.css","quarterly-value.css","microsoft-form.css","google-reviews.css","hero-photo.css","seo-pages.css"];
+const stylesheets = ["styles.css","brand-logo.css","window-plans.css","quarterly-value.css","quote-contact.css","google-reviews.css","hero-photo.css","seo-pages.css"];
 const cssParts = await Promise.all(stylesheets.map(file => readFile(new URL(file, root), 'utf8')));
 await writeFile(new URL('site.css', root), cssParts.join('\n'));
 
