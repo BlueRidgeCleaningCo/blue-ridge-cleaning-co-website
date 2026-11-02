@@ -1,3 +1,4 @@
+import { renderWindowGallery } from "./window-gallery.mjs";
 import { mkdir, writeFile, readFile } from "node:fs/promises";
 
 const root = new URL("./", import.meta.url);
@@ -533,7 +534,7 @@ for (const service of services) {
   const html = shell({ title: service.title, description: service.description, canonical, kicker: service.kicker, h1: service.h1, lede: service.intro, image: service.image, imageAlt: service.imageAlt, body, lowerTitle: "Areas we serve", lowerLinks: locationLinks, schema });
   const directory = new URL(`services/${service.slug}/`, root);
   await mkdir(directory, { recursive: true });
-  await writeFile(new URL("index.html", directory), html);
+  await writeFile(new URL("index.html", directory), service.slug === "window-cleaning" ? html.replace('<section class="seo-content">', renderWindowGallery("../../") + '<section class="seo-content">') : html);
 }
 
 for (const location of locations) {
